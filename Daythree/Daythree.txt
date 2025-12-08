@@ -1,1 +1,170 @@
+# 🐱 GIT Commands 
+
+## 1️⃣ git init
+
+Iska matlab hota hai — naya Git project shuru karna.
+
+Jab tum kisi folder ke andar ye command chalate ho:
+
+```bash
+git init
+```
+
+To Git us folder ko track karna start kar deta hai.
+Matlab ab tum jo bhi changes karoge, Git unhe save rakh sakta hai.
+
+---
+
+## 2️⃣ git clone
+
+Ye command kisi GitHub project ko apne laptop me download karne ke liye hoti hai.
+
+Example:
+
+```bash
+git clone https://github.com/user/project.git
+```
+
+Isse pura project tumhare system par aa jata hai.
+
+---
+
+## 3️⃣ File open (vi editor)
+
+Linux me file kholne/edit karne ke liye:
+
+```bash
+vi filename.extension
+```
+
+Example:
+
+```bash
+vi index.html
+```
+
+---
+
+# 🐧 LINUX Commands (Hinglish me samjha hua)
+
+## 1️⃣ pwd — Present Working Directory
+
+Is command se pata chalta hai ki tum abhi kis folder me ho.
+
+```bash
+pwd
+```
+
+---
+
+## 2️⃣ ls — List files/folders
+
+Ye command current folder ke andar sab file/folder dikha deti hai.
+
+```bash
+ls
+```
+
+---
+
+## 3️⃣ ls -lrt – Details ke saath list
+
+ l = long list (details)
+ r = reverse order
+ t = latest file sabse neeche
+
+Command:
+
+```bash
+ls -lrt
+```
+
+Ye zyada professional log use karte hain.
+
+---
+
+## 4️⃣ cd foldername — Change Directory
+
+Kisi folder ke andar jaane ke liye:
+
+```bash
+cd foldername
+```
+
+---
+
+## 5️⃣ cd .. — Ek folder peeche jaana
+
+Agar galat folder me chale gaye ho to:
+
+```bash
+cd ..
+```
+
+---
+
+## 6️⃣ cd path — Seedha kisi location par jaana
+
+Example:
+
+```bash
+cd /home/ayush/Documents/project
+```
+
+---
+
+## 7️⃣ mkdir — New folder banana
+
+```bash
+mkdir myfolder
+```
+
+---
+
+## 8️⃣ vi filename — File open/edit
+
+```bash
+vi test.txt
+```
+
+---
+
+## 9️⃣ :q! — Force quit (bina save kiye bahar)
+
+vi editor me agar bina save kiye bahar nikalna ho:
+
+```bash
+:q!
+```
+
+---
+
+## 🔟 clear — Terminal clean karna
+
+Screen ko fresh kar deta hai.
+
+```bash
+clear
+```
+
+---
+
+# ⭐ Super Simple Hinglish Summary
+
+| Command   | Explanation (Hinglish)                       |
+| --------- | -------------------------------------------- |
+| git init  | Apne folder ko Git project bana deta hai     |
+| git clone | GitHub se pura project download kar deta hai |
+| pwd       | Bata deta hai ki tum kis folder me ho        |
+| ls        | Files/folders ki list dikha deta hai         |
+| ls -lrt   | List + details + latest neeche               |
+| cd        | Kisi folder ke andar jaana                   |
+| cd ..     | Ek step peeche jaana                         |
+| mkdir     | Naya folder banana                           |
+| vi        | File open/edit karna                         |
+| :q!       | Bina save exit                               |
+| clear     | Terminal clean                               |
+
+---
+
 
