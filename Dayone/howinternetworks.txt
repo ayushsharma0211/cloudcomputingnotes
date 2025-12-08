@@ -1,1 +1,118 @@
+ 🌐 1. How the Internet Works (Simple Explanation)
 
+ Client–Server Model
+
+ Client: Jo device request bhejti hai (mobile, laptop, browser).
+ Server: Jo request ka answer deta hai (website ka computer).
+ Example:
+
+   Client → “Give me google.com page”
+   Server → “Here is the page.”
+
+ Process (Step-by-step):
+
+1. User browser me URL type karta hai.
+2. Browser server ko request bhejta hai (using HTTP/HTTPS).
+3. Server request receive karta hai.
+4. Server response bhejkar data return karta hai (website, image, video, etc.).
+5. Browser data ko screen par show kar deta hai.
+
+ Internet Architecture
+
+ Internet is made of:
+
+   Clients
+   Servers
+   Routers
+   ISPs
+   Protocols (HTTP, TCP/IP)
+
+---
+
+ 💻 2. Operating System (OS)
+
+ Definition
+
+ Operating System is a software that manages:
+
+   Computer hardware
+   Applications
+   User interaction
+ Without OS, computer cannot work.
+
+ OS = Collection of Software
+
+ Software = Collection of programs
+ Program = Set of instructions
+
+ Functions of OS
+
+ Manage hardware (CPU, RAM, Storage)
+ Manage applications
+ Manage files & folders
+ Provide security
+ Provide user interface (GUI/CLI)
+
+ Examples
+
+ Windows
+ Linux
+ macOS
+ Android
+ iOS
+
+---
+
+ 🛠 3. Git & GitHub
+
+ Git
+
+ Version control system (VCS)
+ Helps track changes in code.
+ Allows:
+
+   Save versions (commits)
+   Undo changes
+   Work with team
+   Merge code
+
+ GitHub
+
+ Online platform (cloud-based) where Git repositories are stored.
+ Allows:
+
+   Hosting code
+   Collaboration
+   Sharing work
+   Working on different projects
+
+ Difference
+
+| Git                        | GitHub                  |
+| -------------------------- | ----------------------- |
+| Installed on your computer | Website/Cloud service   |
+| Version control tool       | Storage & collaboration |
+| Works offline              | Works online            |
+| Commands needed            | UI + Git integration    |
+
+---
+
+ 📘 Final Short Summary (Super Simple)
+
+ Internet
+
+ Client request → Server respond → Data show
+ Runs using networks + protocols.
+
+ Operating System (OS)
+
+ Software that runs your computer.
+ Manages hardware + apps + files.
+
+ Git
+
+ Tool to track code changes.
+
+ GitHub
+
+ Online place to store and share Git projects.
