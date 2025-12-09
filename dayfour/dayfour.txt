@@ -1,1 +1,206 @@
 
+# 🌳 Trunk Based Branch Strategy (Simple Words me)
+
+Is diagram ka main idea hai:
+👉 Main branch ek tree ka trunk hota hai, aur baaki branches usse nikalti hain.
+
+### Branch Types:
+
+ main (M) → main / production branch (stable code)
+ feature (F) → new feature banane ke liye
+ release (R) → release ke time use hoti hai
+ hotfix (H) → urgent bug fix ke liye
+
+👉 Real companies isi structure ko follow karti hain.
+
+---
+
+# 🖥️ Local → Git (GitHub tak code bhejna)
+
+### ✅ Step 1: Git user setup (ek baar hi hota hai)
+
+```bash
+git config --global user.name "UserName"
+git config --global user.email "your@email.com"
+```
+
+👉 Git ko batate ho ki code kisne likha hai
+
+---
+
+### ✅ Step 2: Git start karna
+
+```bash
+git init
+```
+
+👉 Folder ko Git repository bana deta hai
+
+---
+
+### ✅ Step 3: Status check karna
+
+```bash
+git status
+```
+
+👉 Batata hai:
+
+ kaunsi files new hain
+ kaunsi staged hain
+ kaunsi commit ready hain
+
+---
+
+### ✅ Step 4: File create karna
+
+Example:
+
+```bash
+vi index.html
+```
+
+👉 File banai / edit ki
+
+---
+
+### ✅ Step 5: File ko staging me dalna
+
+```bash
+git add .
+```
+
+👉 Sab files add kar deta hai
+
+Ya sirf ek file:
+
+```bash
+git add filename
+```
+
+---
+
+### ✅ Step 6: Commit karna
+
+```bash
+git commit -m "message"
+```
+
+👉 Snapshot save hota hai
+Message batata hai kya change kiya
+
+---
+
+### ✅ Step 7: GitHub se connect karna
+
+```bash
+git remote add origin <repo-url>
+```
+
+👉 Local repo ko GitHub repo se jodta hai
+
+---
+
+### ✅ Step 8: Latest code lana (pull)
+
+```bash
+git pull
+```
+
+👉 GitHub ka latest code local me aa jata hai
+
+---
+
+### ✅ Step 9: Code GitHub par bhejna
+
+```bash
+git push -u origin main
+```
+
+👉 First time push
+
+```bash
+git push
+```
+
+👉 Next times
+
+---
+
+# 🔄 Git → Local (GitHub se code lana)
+
+### ✅ Clone command
+
+```bash
+git clone <url>
+```
+
+👉 GitHub ka project apne system me copy kar leta hai
+
+---
+
+# 🌿 Branching (Most Important Part)
+
+## ✅ Branch list dekhna
+
+```bash
+git branch
+```
+
+---
+
+## ✅ New branch banana
+
+```bash
+git branch branchname
+```
+
+---
+
+## ✅ Branch switch karna
+
+```bash
+git checkout branchname
+```
+
+---
+
+## ✅ Create + switch ek saath
+
+```bash
+git checkout -b branchname
+```
+
+👉 Ye sabse zyada use hota hai ✅
+
+---
+
+## ✅ Branch merge karna
+
+```bash
+git merge branchname
+```
+
+👉 Feature branch ka code main me add kar deta hai
+
+---
+
+# 🧠 Diagram ko simple example se samjho
+
+ main → Live website
+ feature → New button / page banaya
+ release → Testing + final changes
+ hotfix → Live bug turant fix
+
+---
+
+# ✅ One Line Revision
+
+ `git init` → Git start
+ `git add` → staging
+ `git commit` → save
+ `git push` → GitHub bhejna
+ `git pull` → GitHub se lana
+ `branch` → alag kaam
+ `merge` → jodna
+
