@@ -1,1 +1,133 @@
 
+# ☁️ How to Create an AWS Account – Detailed Notes 
+---
+
+## ✅ AWS Account kya hota hai?
+
+AWS account ek master account hota hai jiske through aap:
+
+ AWS services use kar sakte ho
+ Servers, storage, databases create kar sakte ho
+ Billing aur security manage kar sakte ho
+
+👉 Ye cloud ka entry gate hota hai.
+
+---
+
+## 🧾 AWS Account Create Karne ke Requirements
+
+AWS account banane se pehle ye cheezein ready honi chahiye:
+
+ Valid Email ID
+ Mobile number (OTP ke liye)
+ Credit / Debit card (verification ke liye)
+ Internet connection
+
+⚠️ Note:
+AWS ₹0 ya $0.01 temporarily charge karta hai (verification only).
+
+---
+
+## 🪜 Step-by-Step: AWS Account Creation Process
+
+---
+
+### 🔹 Step 1: AWS Website Open karo
+
+Browser me jao aur search karo:
+
+> AWS Create Account
+
+👉 “Create an AWS Account” par click karo.
+
+---
+
+### 🔹 Step 2: Email & Password Setup
+
+ Email ID enter karo
+ AWS account name do
+ Password set karo
+
+👉 Ye email tumhara root account email hota hai.
+
+---
+
+### 🔹 Step 3: Contact Information
+
+ Account type select karo (Personal / Business)
+ Name, address, phone number fill karo
+
+---
+
+### 🔹 Step 4: Payment Information
+
+ Debit / Credit card details enter karo
+
+👉 AWS sirf verification ke liye small amount charge karta hai.
+
+---
+
+### 🔹 Step 5: Identity Verification
+
+ Mobile number verify hota hai
+ OTP ya call ke through verification hoti hai
+
+---
+
+### 🔹 Step 6: Support Plan Select karo
+
+ Basic (Free) select karo (Beginners ke liye best)
+
+---
+
+### 🔹 Step 7: Account Created Successfully 🎉
+
+ AWS confirmation email bhejta hai
+ Ab tum AWS Management Console me login kar sakte ho
+
+---
+
+## 🔐 Root User Login (Important Concept)
+
+### ✅ Root User kya hota hai?
+
+Root user:
+
+ Account ka full access owner hota hai
+ Sab services, billing, IAM manage kar sakta hai
+
+⚠️ Best Practice:
+
+ Daily use ke liye IAM user create karo
+ Root account sirf setup & billing ke liye use karo
+
+---
+
+## 🎯 AWS Free Tier (Important)
+
+AWS new users ko deta hai:
+
+ 12 months free tier
+ Limited EC2, S3, RDS usage free
+
+👉 Learning aur practice ke liye perfect.
+
+---
+
+## 🧠 Common Beginner Mistakes
+
+ Root user se daily kaam karna
+ Resources delete na karna (billing issue)
+ Free tier limit cross karna
+
+---
+
+## ✅ Quick Revision (One Lines)
+
+ AWS account = Cloud access gate
+ Root user = Full control
+ IAM user = Safe daily use
+ Free tier = Learning ke liye free services
+
+
+
