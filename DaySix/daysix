@@ -1,1 +1,356 @@
+DAY 6
 
+## 🔹 1. IAAS – Infrastructure as a Service
+
+### ✅ What is IAAS?
+
+IAAS me cloud provider aapko basic IT infrastructure rent par deta hai:
+
+ Virtual Servers
+ Storage
+ Networking
+
+👉 Aap OS install karte ho, software manage karte ho.
+
+### 🧠 Simple Example:
+
+Jaise tum ek khali flat rent par lete ho —
+furniture, TV, AC tum khud lagate ho.
+
+### 📌 Examples:
+
+ AWS EC2
+ Google Compute Engine
+ Azure Virtual Machines
+
+### 👨‍💻 Who uses IAAS?
+
+ System Administrators
+ DevOps Engineers
+
+---
+
+## 🔹 2. PAAS – Platform as a Service
+
+### ✅ What is PAAS?
+
+PAAS me cloud provider:
+
+ Server
+ OS
+ Runtime
+ Database
+
+sab manage karta hai.
+
+👉 Aap sirf code likhte ho aur deploy karte ho.
+
+### 🧠 Simple Example:
+
+Jaise furnished flat — sirf rehna hai.
+
+### 📌 Examples:
+
+ AWS Elastic Beanstalk
+ Google App Engine
+ Heroku
+
+### 👨‍💻 Who uses PAAS?
+
+ Developers
+ Application teams
+
+---
+
+## 🔹 3. SAAS – Software as a Service
+
+### ✅ What is SAAS?
+
+SAAS me aapko ready-made software milta hai via internet.
+
+👉 Install karne ki zarurat nahi.
+
+### 🧠 Simple Example:
+
+Jaise hotel room — sab ready.
+
+### 📌 Examples:
+
+ Gmail
+ Netflix
+ Zoom
+ Google Docs
+
+### 👨‍💻 Who uses SAAS?
+
+ End users
+ Businesses
+
+---
+
+## 🔄 IAAS vs PAAS vs SAAS (Short Table)
+
+| Service | Control        |
+| ------- | -------------- |
+| IAAS    | High control   |
+| PAAS    | Medium control |
+| SAAS    | No control     |
+
+---
+
+# 🖥️ 4. Virtualization
+
+### ✅ What is Virtualization?
+
+Virtualization ka matlab:
+
+> Ek physical machine par multiple virtual machines (VMs) chalana.
+
+👉 Ek server → multiple computers jaisa kaam karta hai.
+
+### 🎯 Benefits:
+
+ Cost kam
+ Resource utilization better
+ Easy scaling
+
+---
+
+## 🔹 5. Hypervisor
+
+### ✅ What is Hypervisor?
+
+Hypervisor ek software hai jo:
+
+ Virtual machines ko create
+ Manage
+ Run karta hai
+
+👉 Ye hardware aur VM ke beech ka bridge hota hai.
+
+---
+
+### 🔸 Types of Hypervisor
+
+#### Type 1 (Bare Metal)
+
+ Direct hardware par run karta hai
+ Zyada fast & secure
+
+📌 Example:
+
+ VMware ESXi
+ Hyper-V
+ Xen
+
+---
+
+#### Type 2 (Hosted)
+
+ OS ke upar run karta hai
+
+📌 Example:
+
+ VirtualBox
+ VMware Workstation
+
+---
+
+## 🌐 6. HTML
+
+### ✅ What is HTML?
+
+HTML ka full form:
+
+> HyperText Markup Language
+
+👉 Ye web pages banane ke kaam aata hai.
+
+### 🧠 Example:
+
+```html
+<h1>Hello Cloud</h1>
+```
+
+HTML browser ko batata hai:
+
+ Heading
+ Paragraph
+ Image
+ Link
+
+---
+
+## 🧑‍💻 7. ROOT User
+
+### ✅ What is Root?
+
+Root user hota hai:
+
+ System ka superuser
+ Full permissions
+
+👉 Root kuch bhi change/delete kar sakta hai.
+
+⚠️ Security ke liye daily use me root avoid karte hain.
+
+---
+
+## 🔐 8. IAM – Identity and Access Management
+
+### ✅ What is IAM?
+
+IAM ka use hota hai:
+
+ Users create karne
+ Permissions assign karne
+ Security manage karne
+
+👉 Ye decide karta hai:
+Kaun kya access kar sakta hai
+
+### 📌 Example:
+
+ Admin
+ Developer
+ Read-only user
+
+### 🎯 Benefits:
+
+ Better security
+ Controlled access
+ No misuse
+
+---
+
+## 🧠 Quick Revision (One Line Each)
+
+ IAAS → Infrastructure rent par
+ PAAS → Platform + tools
+ SAAS → Ready software
+ Virtualization → Ek server, multiple VMs
+ Hypervisor → VM manager
+ HTML → Web page language
+ Root → Superuser
+ IAM → Access control system
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+## ✅ AWS Global Infrastructure kya hota hai?
+
+AWS Global Infrastructure ka matlab hai:
+
+> AWS ke data centers poori duniya me spread hote hain, taaki services fast, secure aur reliable mil sakein.
+
+AWS infrastructure mainly 3 parts me divided hota hai:
+
+1. Region
+2. Availability Zone (AZ)
+3. Edge Location
+
+---
+
+## 🌐 1️⃣ Region
+
+### 🔹 What is a Region?
+
+Region ek geographical area (city/country) hota hai jahan AWS ke data centers hote hain.
+
+👉 Tumhara actual application / product yahin run hota hai.
+
+### 🧠 Real-life Example:
+
+Region = Amazon ka main warehouse
+Jahan asli product store hota hai.
+
+### 📌 Example Regions:
+
+ ap-south-1 (Mumbai)
+ us-east-1 (N. Virginia)
+ eu-west-1 (Ireland)
+
+---
+
+## 🏢 2️⃣ Availability Zone (AZ)
+
+### 🔹 What is an AZ?
+
+AZ ek separate data center hota hai jo:
+
+ Same region ke andar hota hai
+ Physically alag hota hai
+
+Example:
+
+ ap-south-1a
+ ap-south-1b
+ ap-south-1c
+
+### 🧠 Real-life Example:
+
+AZ = Ek hi city me multiple warehouses
+
+### 🎯 Why AZ is important?
+
+ Backup
+ High availability
+ Fault tolerance
+
+👉 Agar ek AZ down ho jaye, to dusra AZ app chala sakta hai.
+
+---
+
+## 🚚 3️⃣ Edge Location
+
+### 🔹 What is an Edge Location?
+
+Edge location AWS ka delivery point hota hai jo:
+
+ User ke paas hota hai
+ Content ko fast deliver karta hai
+
+### 🧠 Real-life Example:
+
+Edge location = Delivery boys poore city me
+Jo product users tak jaldi pahunchate hain.
+
+### 📌 Used by:
+
+ Amazon CloudFront (CDN)
+ Low latency delivery
+
+---
+
+## ⚡ Why Edge Locations are Important?
+
+ Fast content delivery
+ Low latency
+ Better user experience
+
+👉 Mostly images, videos, static files yahin se serve hote hain.
+
+---
+
+## 🧩 Region vs AZ vs Edge Location (Easy Table)
+
+| Feature  | Region       | AZ                   | Edge Location  |
+| -------- | ------------ | -------------------- | -------------- |
+| Location | City/Country | Same city            | Near users     |
+| Purpose  | App runs     | Backup & reliability | Fast delivery  |
+| Example  | Mumbai       | ap-south-1a          | CloudFront POP |
+
+---
+
+## 🧠 Complete Real-Life Analogy (Class Style)
+
+ Region → Amazon warehouse (actual product)
+ AZ → Multiple warehouses in same city (backup)
+ Edge Location → Delivery boys across city (fast delivery)
+
+---
+
+## ✅ One-Line Revision
+
+ Region = Where app lives
+ AZ = Backup & reliability
+ Edge Location = Fast content delivery
