@@ -1,0 +1,203 @@
+DAY 7 
+
+---
+
+# ☁️ Day 7 – Cloud Storage (Detailed + Real-Life Examples)
+
+---
+
+## 🧱 1. Block Storage
+
+### ✅ Definition
+
+Block Storage ek aisa storage hota hai jisme data ko chhote-chhote fixed size blocks me divide karke store kiya jata hai.
+Har block ka apna unique address hota hai.
+
+👉 System blocks ko jod kar file banata hai.
+
+---
+
+### 🧠 Real-Life Example
+
+ Computer ki internal hard disk (C: Drive)
+ Mobile phone ka internal storage
+
+OS ko pata hota hai kaunsa block kahan rakha hai.
+
+---
+
+### 🔍 Deep Understanding
+
+ Block storage directly OS ke saath attach hota hai
+ OS decide karta hai:
+
+   File system (NTFS, ext4, etc.)
+   Data ka structure
+ Isliye performance bahut fast hoti hai
+
+---
+
+### 🎯 Where Block Storage is Used
+
+ Operating System install karna
+ Databases (MySQL, Oracle)
+ High-performance applications
+
+---
+
+### ☁️ AWS Block Storage → EBS (Elastic Block Store)
+
+#### 🔹 What is EBS?
+
+EBS ek virtual hard disk hai jo EC2 ke saath attach hoti hai.
+
+📌 Example:
+
+ EC2 = CPU
+ EBS = Hard disk
+
+Agar EC2 stop ho jaye, data EBS me safe rehta hai.
+
+---
+
+## 📁 2. File Storage
+
+### ✅ Definition
+
+File Storage me data files aur folders ke form me store hota hai, jise multiple users ya systems access kar sakte hain.
+
+---
+
+### 🧠 Real-Life Example
+
+ Office ka shared folder
+ Google Drive
+ Pen drive jise multiple log use karte hain
+
+---
+
+### 🔍 Deep Understanding
+
+ File system already bana hota hai
+ User directly files ke saath kaam karta hai
+ Sharing aur collaboration easy hota hai
+
+---
+
+### 🎯 Where File Storage is Used
+
+ Shared documents
+ Website files (HTML, CSS, images)
+ Media processing
+
+---
+
+### ☁️ AWS File Storage → EFS (Elastic File System)
+
+#### 🔹 What is EFS?
+
+EFS ek managed file system hai jo:
+
+ Multiple EC2 instances ke saath attach hota hai
+
+📌 Example:
+
+ 3 EC2 servers ek hi website chala rahe hain
+ Sab EFS se same files read/write kar rahe hain
+
+---
+
+## 🪣 3. Object Storage
+
+### ✅ Definition
+
+Object Storage me data objects ke form me store hota hai.
+Har object ke paas hota hai:
+
+ Data
+ Metadata
+ Unique ID
+
+👉 Ye traditional folder system follow nahi karta.
+
+---
+
+### 🧠 Real-Life Example
+
+ Google Photos
+ YouTube videos
+ WhatsApp media backup
+
+Tum file ka location ya block nahi jante, sirf object name jante ho.
+
+---
+
+### 🔍 Deep Understanding
+
+ Object storage highly scalable hota hai
+ Internet ke through access hota hai
+ File system jaise operations (rename, move) limited hote hain
+
+---
+
+### 🎯 Where Object Storage is Used
+
+ Images, videos
+ Backups
+ Logs
+ Static websites
+
+---
+
+### ☁️ AWS Object Storage → S3 (Simple Storage Service)
+
+#### 🔹 What is S3?
+
+S3 AWS ka object storage service hai jisme data buckets me store hota hai.
+
+📌 Example:
+
+ Netflix videos
+ Website images
+ Backup files
+
+S3 ka durability hota hai 99.999999999% (11 9s).
+
+---
+
+## 🔄 Block vs File vs Object (Deep Comparison)
+
+| Feature        | Block     | File          | Object    |
+| -------------- | --------- | ------------- | --------- |
+| Data Structure | Blocks    | Files/Folders | Objects   |
+| Performance    | Very High | Medium        | High      |
+| Scalability    | Limited   | Medium        | Very High |
+| Sharing        | No        | Yes           | Yes       |
+| AWS Service    | EBS       | EFS           | S3        |
+
+---
+
+## 🧠 Real-World Scenario (Easy to Remember)
+
+🏠 House Example
+
+ Block Storage → Almirah ke drawers
+ File Storage → Shared cupboard
+ Object Storage → Godown with labels
+
+---
+
+## ✅ One-Line Definitions (Exam Ready)
+
+ Block Storage → Disk-level storage
+ File Storage → Shared file system
+ Object Storage → Metadata-based storage
+
+---
+
+## 🎯 AWS Use Summary
+
+ EBS → EC2 OS & database
+ EFS → Shared website files
+ S3 → Images, videos, backups
+
