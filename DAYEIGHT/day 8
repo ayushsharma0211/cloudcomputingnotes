@@ -1,0 +1,201 @@
+# ☁️ **Day 8 – AWS S3 Basics & SOP (Notes)**
+
+---
+
+## 📘 **What is CSP (Cloud Service Provider)?**
+
+### ✅ Definition
+
+Cloud Service Provider (CSP) wo company hoti hai jo **internet ke through cloud services** provide karti hai.
+
+### 🧠 Examples
+
+* AWS (Amazon Web Services)
+* Microsoft Azure
+* Google Cloud Platform
+
+👉 AWS ek **CSP** hai jo storage, server, database, networking jaisi services deta hai.
+
+---
+
+## 🪣 **What is Amazon S3?**
+
+### ✅ Definition
+
+Amazon S3 (Simple Storage Service) ek **Object Storage service** hai jo data ko **buckets** ke andar store karta hai.
+
+### 🔍 Key Points
+
+* Highly scalable
+* Secure
+* Pay as you use
+* Internet se accessible
+
+---
+
+## 🪣 **What is an S3 Bucket?**
+
+### ✅ Definition
+
+S3 Bucket ek **container** hota hai jisme:
+
+* Files (objects)
+* Images
+* Videos
+* Backups
+  store kiye jaate hain.
+
+👉 Bucket ke andar jo files hoti hain unhe **objects** kehte hain.
+
+---
+
+## 📝 **SOP – S3 Bucket Creation (Step-by-Step)**
+
+### 🔹 **STEP 1: Login into AWS**
+
+* AWS account me **Root user** se login karo
+
+---
+
+### 🔹 **STEP 2: AWS Console & Search**
+
+* AWS Management Console open karo
+* Search bar me **S3** type karo
+
+---
+
+### 🔹 **STEP 3: Open S3 Service**
+
+* Amazon S3 par click karo
+* **Create bucket** button par click karo
+
+---
+
+### 🔹 **STEP 4: Bucket Configuration**
+
+* Bucket type: **General purpose**
+* Bucket name: **Globally unique name** do
+  (example: `ayushfirstbucket952787`)
+
+👉 Bucket name poori duniya me unique hota hai.
+
+---
+
+### 🔹 **STEP 5: Default Settings**
+
+* Saare options **default** rakho
+* (Block public access, encryption, etc.)
+
+---
+
+### 🔹 **STEP 6: Create Bucket**
+
+* Right side niche **Create bucket** par click karo
+* Bucket successfully create ho jata hai
+
+---
+
+### 🔹 **STEP 7: Upload First File**
+
+* Bucket ke andar jao
+* **Upload** par click karo
+* File select karke upload karo
+
+---
+
+### 🔹 **STEP 8: Object Details**
+
+* File name par click karo
+* Wahan se milta hai:
+
+  * Object size
+  * Storage class
+  * Permissions
+  * ARN
+
+---
+
+## 🔐 **What is ACL (Access Control List)?**
+
+### ✅ Definition
+
+ACL ek permission system hota hai jo decide karta hai:
+
+> Kaun bucket ya object ko access kar sakta hai aur kya access milega (read/write)
+
+### 🧠 Simple Example
+
+* Public access
+* Private access
+
+👉 Aajkal AWS **IAM + Bucket policy** ko prefer karta hai.
+
+---
+
+## 🆔 **What is ARN (Amazon Resource Name)?**
+
+### ✅ Definition
+
+ARN ek **unique identifier** hota hai jo AWS ke har resource ko identify karta hai.
+
+### 🧠 Example Format
+
+```
+arn:aws:s3:::bucket-name
+```
+
+👉 ARN ka use:
+
+* IAM policies
+* Permissions
+* Resource identification
+
+---
+
+## 📄 **What is JSON?**
+
+### ✅ Definition
+
+JSON (JavaScript Object Notation) ek **lightweight data format** hai jo data ko **key–value pair** me store karta hai.
+
+### 🧠 Example
+
+```json
+{
+  "Name": "Ayush",
+  "Service": "S3",
+  "Access": "ReadOnly"
+}
+```
+
+👉 AWS me:
+
+* IAM policies
+* Bucket policies
+* Permissions
+  JSON format me likhe jaate hain.
+
+---
+
+## 🧠 **Quick Revision (One Lines)**
+
+* CSP → Cloud service provider (AWS)
+* S3 → Object storage service
+* Bucket → Data container
+* Object → File inside bucket
+* ACL → Access permissions
+* ARN → Resource ka unique ID
+* JSON → Policy likhne ka format
+
+---
+
+## ✅ **What You Did Practically (Day 8)**
+
+* AWS S3 service open ki
+* First S3 bucket create ki
+* File upload ki
+* Object details explore ki
+
+
+
+
