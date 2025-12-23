@@ -1,1 +1,191 @@
 
+# 📄 **JSON – Complete Notes 
+
+---
+
+## ✅ **What is JSON? (Definition)**
+
+JSON ka full form **JavaScript Object Notation** hai.
+
+JSON ek **lightweight data format** hai jo data ko **key–value pairs** ke form me store aur exchange karta hai.
+
+👉 JSON:
+
+* Human-readable hota hai
+* Machine-readable hota hai
+* Internet par data share karne ke liye widely use hota hai
+
+---
+
+## 🧠 **Why JSON is Used?**
+
+JSON ka use hota hai kyunki:
+
+* Simple aur easy to understand hai
+* Fast data transfer karta hai
+* Almost saari programming languages support karti hain
+* APIs aur cloud services me standard format hai
+
+---
+
+## 🧱 **Basic Structure of JSON**
+
+JSON me data **curly braces `{ }`** ke andar hota hai.
+
+Format:
+
+```json
+{
+  "key": "value"
+}
+```
+
+---
+
+## 🔑 **Key–Value Pair Explained**
+
+* **Key** → hamesha double quotes `" "` me hoti hai
+* **Value** → string, number, boolean, array ya object ho sakti hai
+
+Example:
+
+```json
+{
+  "Name": "Ayush",
+  "Age": 23,
+  "IsStudent": true
+}
+```
+
+---
+
+## 📦 **Data Types in JSON**
+
+JSON me following data types hote hain:
+
+* **String** → `"AWS"`
+* **Number** → `10`
+* **Boolean** → `true / false`
+* **Array** → `[ ]`
+* **Object** → `{ }`
+* **Null** → `null`
+
+Example:
+
+```json
+{
+  "Services": ["EC2", "S3", "IAM"],
+  "Region": "ap-south-1",
+  "FreeTier": true
+}
+```
+
+---
+
+## 🧩 **JSON Object vs JSON Array**
+
+### 🔹 JSON Object
+
+```json
+{
+  "Service": "S3"
+}
+```
+
+### 🔹 JSON Array
+
+```json
+[
+  "EC2",
+  "S3",
+  "IAM"
+]
+```
+
+---
+
+## ☁️ **JSON in AWS (Very Important)**
+
+AWS me JSON ka use hota hai:
+
+* **IAM Policies**
+* **S3 Bucket Policies**
+* **Role Policies**
+* **Permissions & Access control**
+
+---
+
+## 📜 **Example: AWS S3 Bucket Policy (JSON)**
+
+```json
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::example-bucket/*"
+    }
+  ]
+}
+```
+
+---
+
+## 🧠 **JSON Policy Keywords Explained**
+
+* **Version** → Policy language version
+* **Statement** → Rule list
+* **Effect** → Allow / Deny
+* **Principal** → Who can access
+* **Action** → What action is allowed
+* **Resource** → On which resource
+
+---
+
+## ❌ **Common JSON Rules (Must Remember)**
+
+* JSON me **comments allowed nahi hote**
+* Trailing comma nahi hota
+* Keys always double quotes me hoti hain
+* Case-sensitive hota hai
+
+❌ Wrong:
+
+```json
+{
+  name: "Ayush"
+}
+```
+
+✅ Correct:
+
+```json
+{
+  "name": "Ayush"
+}
+```
+
+---
+
+## 🧠 **Real-Life Example**
+
+JSON = **Form**
+
+* Name
+* Age
+* Address
+
+Sab ek proper structure me hota hai.
+
+---
+
+## ✅ **One-Line Revision**
+
+JSON ek simple data format hai jo data ko structured way me store aur exchange karta hai.
+
+---
+
+
+
