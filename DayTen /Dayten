@@ -1,1 +1,240 @@
+# ☁️ **Day 10 – Amazon S3 Storage Classes (Detailed Notes)**
+
+---
+
+## 📦 **What are S3 Storage Classes?**
+
+### ✅ Definition
+
+Amazon S3 Storage Classes alag-alag **data access patterns** ke liye design ki gayi storage options hoti hain.
+
+👉 Matlab:
+
+* Data **kitni baar access hota hai**
+* Data **kitne time ke liye store karna hai**
+* **Cost vs access speed**
+
+In sab ke basis par storage class choose ki jaati hai.
+
+---
+
+## 🧠 **Basic Rule (Easy to Remember)**
+
+* **Zyada access → zyada cost**
+* **Kam access → kam cost**
+* **Fast access → mehnga**
+* **Slow access → sasta**
+
+---
+
+## 🟢 **1. S3 Standard**
+
+### ✅ Definition
+
+S3 Standard ek **general-purpose storage class** hai jo **frequently accessed data** ke liye use hoti hai.
+
+---
+
+### 🔍 Key Features
+
+* Millisecond access
+* High availability & durability
+* No minimum storage duration
+
+---
+
+### 🧠 Real-Life Example
+
+* Website images
+* Videos
+* Mobile app data
+
+---
+
+### 🎯 Use Case
+
+* Data jo **daily ya frequently access** hota hai
+
+---
+
+## 🔵 **2. S3 Intelligent-Tiering**
+
+### ✅ Definition
+
+S3 Intelligent-Tiering automatically data ko **different access tiers** me move karta hai based on usage.
+
+👉 Tumhe manually decide karne ki zarurat nahi.
+
+---
+
+### 🔍 How it Works
+
+* Frequently accessed → Frequent tier
+* 30 days no access → Infrequent tier
+* 90 days no access → Archive tier
+* 180 days no access → Deep Archive tier
+
+---
+
+### 🧠 Real-Life Example
+
+* YouTube videos (kab viral ho jaaye pata nahi)
+* Logs jinka access pattern unknown ho
+
+---
+
+### 🎯 Use Case
+
+* Jab data ka **future access pattern unknown** ho
+
+---
+
+## 🟡 **3. S3 Standard-Infrequent Access (S3 Standard-IA)**
+
+### ✅ Definition
+
+Long-lived data jo **kam access hota hai**, lekin jab chahiye to **fast access** chahiye.
+
+---
+
+### 🔍 Key Features
+
+* Lower storage cost than Standard
+* Millisecond access
+* Retrieval cost lagta hai
+
+---
+
+### 🧠 Real-Life Example
+
+* Backup files
+* Disaster recovery data
+
+---
+
+## 🟠 **4. S3 One Zone-Infrequent Access (S3 One Zone-IA)**
+
+### ✅ Definition
+
+S3 Standard-IA jaisa hi hai, bas data **sirf ek Availability Zone** me store hota hai.
+
+---
+
+### 🔍 Key Features
+
+* Cost aur kam
+* Single AZ (less durable)
+
+---
+
+### 🧠 Real-Life Example
+
+* Re-creatable data
+* Temporary backups
+
+---
+
+## ❄️ **5. S3 Glacier Instant Retrieval**
+
+### ✅ Definition
+
+Archive data ke liye jise **kabhi-kabhi turant access** chahiye.
+
+---
+
+### 🔍 Key Features
+
+* Low storage cost
+* Millisecond retrieval
+
+---
+
+### 🧠 Use Case
+
+* Medical records
+* Compliance data
+
+---
+
+## ❄️ **6. S3 Glacier Flexible Retrieval (Earlier: Glacier)**
+
+### ✅ Definition
+
+Long-term archive data jise **rarely access** kiya jata hai.
+
+---
+
+### 🔍 Key Features
+
+* Retrieval time: minutes to hours
+* Storage cost low
+
+---
+
+### 🧠 Use Case
+
+* Audit logs
+* Old backups
+
+---
+
+## 🧊 **7. S3 Glacier Deep Archive**
+
+### ✅ Definition
+
+Sabse **sasta storage class**, long-term data ke liye jise **bahut kam access** kiya jata hai.
+
+---
+
+### 🔍 Key Features
+
+* Retrieval time: hours
+* Lowest cost
+
+---
+
+### 🧠 Real-Life Example
+
+* 7–10 saal purane records
+* Legal archives
+
+---
+
+## 📊 **Storage Classes Comparison (Easy Table)**
+
+| Storage Class       | Access     | Cost      | Use Case       |
+| ------------------- | ---------- | --------- | -------------- |
+| S3 Standard         | Frequent   | High      | Active data    |
+| Intelligent-Tiering | Unknown    | Optimized | Dynamic data   |
+| Standard-IA         | Infrequent | Lower     | Backups        |
+| One Zone-IA         | Infrequent | Cheaper   | Re-creatable   |
+| Glacier Instant     | Rare       | Low       | Archive + fast |
+| Glacier Flexible    | Very Rare  | Lower     | Long-term      |
+| Deep Archive        | Very Rare  | Lowest    | Cold archive   |
+
+---
+
+## 🧠 **Hotel Example (Class Explanation Style)**
+
+* **City Center Hotel** → S3 Standard (mehnga, fast)
+* **Outskirts Hotel** → Standard-IA
+* **Village Hotel** → Glacier
+* **Store Room Godown** → Deep Archive
+
+👉 Stay = Storage cost
+👉 Taxi = Access cost
+
+---
+
+## ✅ **One-Line Revision**
+
+* Standard → Hot data
+* Intelligent-Tiering → Smart movement
+* IA → Warm data
+* Glacier → Cold data
+* Deep Archive → Frozen data
+
+---
+
+
 
