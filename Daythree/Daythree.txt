@@ -149,6 +149,76 @@ Screen ko fresh kar deta hai.
 clear
 ```
 
+pwd
+
+Present Working Directory
+
+Batata hai ki tum abhi Linux system me kis exact directory (folder) ke andar kaam kar rahe ho.
+Current location ka full path show karta hai.
+
+ls
+
+List Files and Folders
+
+Current directory ke andar maujood saari files aur folders ki list dikhata hai.
+Isse pata chalta hai folder ke andar kya-kya present hai.
+
+ls -lrt
+
+List with Details (Time wise)
+
+Files aur folders ko details ke sath dikhata hai jaise permission, owner, size aur date.
+Output time ke according sort hota hai — purani files upar aur latest files neeche.
+
+cd foldername
+
+Change Directory (Go Inside Folder)
+
+Current directory se kisi specific folder ke andar jaane ke liye use hoti hai.
+Isse tum us folder ke andar kaam kar sakte ho.
+
+cd ..
+
+Go to Parent Directory
+
+Current folder se ek level upar (previous folder) me le jaata hai.
+Folder structure me peeche move karne ke liye use hota hai.
+
+cd path
+
+Change Directory Using Path
+
+Kisi bhi specific location par direct jaane ke liye use hoti hai.
+Isme full path ya relative path diya jaata hai.
+
+mkdir foldername
+
+Make Directory (Create New Folder)
+
+Naya folder / directory create karne ke liye use hoti hai.
+Projects aur files ko organize karne me madad karti hai.
+
+vi filename
+
+Open or Create File in vi Editor
+
+Terminal ke andar file open ya edit karne ke liye use hoti hai.
+Agar file exist nahi karti, to nayi file create ho jaati hai.
+
+:q!
+
+Exit vi Without Saving
+
+vi editor se bina changes save kiye bahar nikalne ke liye use hoti hai.
+Galti se kiye gaye edits ko ignore kar deta hai.
+
+clear
+
+Clear Terminal Screen
+
+Terminal ki screen ko saaf (clean) kar deta hai.
+Purane commands aur output hata deta hai taaki screen fresh lage.
+
 ---
 
 # ⭐ Super Simple Hinglish Summary
