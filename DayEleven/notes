@@ -1,1 +1,214 @@
+ ☁️ Day 11 – S3 Lifecycle Policies & Bucket Versioning (Notes)
+
+---
+
+ 🔄 1. What is Lifecycle Policy in AWS S3?
+
+ ✅ Definition
+
+Lifecycle policy AWS S3 ka ek feature hai jisse hum automatically objects ko manage kar sakte hain, jaise:
+
+ Storage class change karna (Standard → IA → Glacier)
+ Old data delete karna
+ Cost optimize karna
+
+👉 Matlab: manual kaam kam, automation zyada
+
+---
+
+ 🎯 Why Lifecycle Policy is Used?
+
+ Storage cost kam karne ke liye
+ Old / unused data ko archive karne ke liye
+ Long-term data ko delete karne ke liye
+ Bucket clean aur optimized rakhne ke liye
+
+---
+
+ 🧠 Real-Life Example
+
+📱 Mobile Photos
+
+ New photos → phone storage
+ Old photos → Google Photos backup
+ Bahut purani photos → archive / delete
+
+👉 Ye hi kaam S3 me lifecycle policy karti hai.
+
+---
+
+ 🪜 2. Lifecycle Policy Steps in AWS (Practical Steps)
+
+ 🔹 Step 1: Bucket Create hone ke baad
+
+ S3 bucket open karo
+
+---
+
+ 🔹 Step 2: Go to Management Tab
+
+ Bucket ke andar Management section par jao
+
+---
+
+ 🔹 Step 3: Lifecycle Rules
+
+ Lifecycle rules option select karo
+ Click Create lifecycle rule
+
+---
+
+ 🔹 Step 4: Rule Name
+
+ Lifecycle rule ka naam do
+  (example: `move-to-glacier-rule`)
+
+---
+
+ 🔹 Step 5: Lifecycle Rule Actions
+
+Yahan 2 main actions hote hain:
+
+ ✅ A. Transition Current Versions
+
+ Objects ko ek storage class se doosri me move karta hai
+ Example:
+
+   30 days → S3 Standard-IA
+   90 days → Glacier
+
+---
+
+ ✅ B. Expire Current Versions
+
+ Objects ko permanently delete karta hai
+ Example:
+
+   365 days ke baad delete
+
+---
+
+ 🔹 Step 6: Days After Object Creation
+
+ Specify karo kitne din baad transition / delete hoga
+
+---
+
+ 🔹 Step 7: Add Transition & Save
+
+ Transition add karo
+ Rule save karo
+
+👉 Lifecycle rule active ho jata hai.
+
+---
+
+ 🗂️ 3. Bucket Versioning
+
+ ✅ Definition
+
+Bucket Versioning ek feature hai jisme:
+
+> Ek hi file ke multiple versions bucket me store hote hain.
+
+---
+
+ 🔍 What Versioning Does?
+
+ File delete hone par recover kar sakte ho
+ File overwrite hone par old version safe rehta hai
+
+---
+
+ 🪜 How to Enable Bucket Versioning
+
+1. S3 bucket open karo
+2. Go to Properties
+3. Bucket Versioning → Enable
+4. Save changes
+
+---
+
+ ⚠️ 4. VERY IMPORTANT CONCEPT
+
+ ❓ “Data update replace nahi hota” – iska kya matlab hai?
+
+ ✅ Simple Explanation
+
+Jab Bucket Versioning ENABLED hoti hai:
+
+👉 Agar tum:
+
+ Same file naam se naya data upload karte ho
+
+Toh:
+
+ Old file replace nahi hoti
+ New file ek naya version ban jati hai
+
+---
+
+ 🧠 Example (Easy to Understand)
+
+📄 File: `report.pdf`
+
+ Version 1 → Old report
+ Version 2 → Updated report
+
+👉 Dono versions bucket me rehte hain
+👉 Latest version default dikhta hai
+
+---
+
+ ❌ Without Versioning
+
+ Old file delete ho jaati
+ Recover possible nahi
+
+---
+
+ ✅ With Versioning
+
+ Old data safe
+ Recovery possible
+
+---
+
+ 💡 Why This is Important?
+
+ Accidentally delete hone se bachav
+ Data loss protection
+ Audit & backup purpose
+
+---
+
+ 🔄 Lifecycle + Versioning Together
+
+Lifecycle rules:
+
+ Old versions ko Glacier me move kar sakti hain
+ Ya automatically delete kar sakti hain
+
+👉 Isse cost bhi bachta hai.
+
+---
+
+ 🧠 One-Line Revision
+
+ Lifecycle Policy → Automatic data management
+ Transition → Storage class change
+ Expiration → Data delete
+ Versioning → Multiple file versions
+ Data update ≠ replace (when versioning ON)
+
+---
+
+ ✅ What You Learned – Day 11
+
+ S3 lifecycle policies
+ Lifecycle rule creation steps
+ Bucket versioning
+ Data update behavior with versioning
+
+
 
