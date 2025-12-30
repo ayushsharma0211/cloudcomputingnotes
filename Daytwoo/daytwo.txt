@@ -1,6 +1,6 @@
 DAY 2 - 
 
-# Git workflow summary (short)
+ Git workflow summary (short)
 
 1. `git init` — local repo banate ho.
 2. File bana/modify karo → `git add` → staging area.
@@ -10,7 +10,7 @@ DAY 2 -
 
 ---
 
-## 1) `git init`
+ 1) `git init`
 
 Kya karta hai: Current folder ko Git repository (local) bana deta hai. `.git` folder create hota hai jisme Git history store hoti hai.
 Use:
@@ -24,7 +24,7 @@ Example: `git init` chalane ke baad `git status` se pata chalega repo ready hai.
 
 ---
 
-## 2) `git status`
+ 2) `git status`
 
 Kya karta hai: Batata hai kaunse files changed hain, kaunse staged hain, aur current branch kaunsa hai. Bahut useful command.
 Use:
@@ -37,7 +37,7 @@ Output dekho: Untracked files (nayi files), Changes not staged, Changes to be co
 
 ---
 
-## 3) `git add file.txt`  (Staging area)
+ 3) `git add file.txt`  (Staging area)
 
 Kya karta hai: File ko staging area mein daalta hai — matlab next commit mein include karne ke liye mark karta hai.
 Use:
@@ -50,13 +50,13 @@ Note: Agar multiple files add karne ho: `git add file1 file2` ya saare changes s
 
 ---
 
-## 4) `git add .`
+ 4) `git add .`
 
 Kya karta hai: Current directory ke sabhi changed aur new files ko staging mein daal deta hai. Simple aur common.
 
 ---
 
-## 5) `git commit -m "your message"`
+ 5) `git commit -m "your message"`
 
 Kya karta hai: Staged changes ko local repository mein ek snapshot (commit) ke form mein save karta hai. Message mein short description do.
 Use:
@@ -69,7 +69,7 @@ Tip: Commit messages meaningful rakhो — later samajhne mein easy hota hai.
 
 ---
 
-## 6) `git remote add origin <github-url>`
+ 6) `git remote add origin <github-url>`
 
 Kya karta hai: Local repo ko ek remote server (jaise GitHub) se connect karta hai aur us remote ka naam `origin` rakhta hai.
 Use:
@@ -88,7 +88,7 @@ git remote set-url origin https://github.com/username/new-repo.git
 
 ---
 
-## 7) `git push -u origin BranchName`
+ 7) `git push -u origin BranchName`
 
 Kya karta hai: Local branch ke commits remote (origin) pe bhej deta hai. `-u` option upstream set karta hai (aage `git push` aur `git pull` bina origin/branch mention kiye chal sakte hain).
 Use (pehli baar push karte waqt):
@@ -103,7 +103,7 @@ Phir aage se: sirf `git push` chalana kaafi hota hai (agar upstream set ho).
 
 ---
 
-## 8) `git push`
+ 8) `git push`
 
 Kya karta hai: Jo current branch ka upstream set hai, us remote pe commits bhejta hai.
 Use:
@@ -116,7 +116,7 @@ git push
 
 ---
 
-## 9) `git clone <github-url>`
+ 9) `git clone <github-url>`
 
 Kya karta hai: Remote repository ko poore local machine pe copy (clone) karta hai — isme repository history bhi aati hai. Use jab pehli baar kisi repo ko local karna ho.
 Use:
@@ -129,7 +129,7 @@ Result: Ek folder `repo` create hoga jiski andar `.git` bhi rahegi.
 
 ---
 
-## 10) `git pull`
+ 10) `git pull`
 
 Kya karta hai: Remote repository se latest changes fetch karke aapke current branch mein merge (ya rebase) karta hai — basically remote changes laata hai aur local branch update karta hai.
 Use (simple):
@@ -152,7 +152,7 @@ Difference fetch vs pull:
 
 ---
 
-# Extra useful commands & tips
+ Extra useful commands & tips
 
  Dekho current branch:
 
@@ -167,8 +167,8 @@ Difference fetch vs pull:
   ```bash
   git branch new-feature
   git checkout new-feature
-  # OR modern command
-  git switch -c new-feature   # creates and switches
+   OR modern command
+  git switch -c new-feature    creates and switches
   ```
 
  Commit history dekho:
@@ -195,7 +195,7 @@ Difference fetch vs pull:
  Discard local changes in file:
 
   ```bash
-  git checkout -- file.txt   # WARNING: local changes lost
+  git checkout -- file.txt    WARNING: local changes lost
   ```
 
  Resolve merge conflicts: Agar `git pull` karte waqt conflict aaye to files manually edit karo, phir:
@@ -207,7 +207,7 @@ Difference fetch vs pull:
 
 ---
 
-# Common errors & fixes
+ Common errors & fixes
 
  Error: failed to push some refs → remote pe naye commits hain. Solution: `git pull` pehle karo, conflicts solve karo, phir `git push`.
  No upstream branch → use `git push -u origin BranchName`.
@@ -215,7 +215,7 @@ Difference fetch vs pull:
 
 ---
 
-# Typical Day-1 simple workflow (example)
+ Typical Day-1 simple workflow (example)
 
 1. `mkdir myproject && cd myproject`
 2. `git init`
