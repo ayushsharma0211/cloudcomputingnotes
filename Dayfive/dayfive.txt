@@ -1,10 +1,10 @@
 DAY - 5 
 
-# ☁️ Cloud Computing – Complete Notes 
+ ☁️ Cloud Computing – Complete Notes 
 
 --
 
-## ✅ What is Cloud Computing?
+ ✅ What is Cloud Computing?
 
 Cloud Computing ka matlab hota hai:
 
@@ -15,7 +15,7 @@ Computer ya server rent par use karna = Cloud Computing.
 
 ---
 
-## ✅ Formal Definition of Cloud Computing
+ ✅ Formal Definition of Cloud Computing
 
 Cloud Computing is the on-demand delivery of IT resources (such as compute power, storage, databases, networking, and software) over the internet with pay-as-you-go pricing.
 
@@ -26,7 +26,7 @@ Cloud Computing is the on-demand delivery of IT resources (such as compute power
 
 ---
 
-## ✅ What is AWS?
+ ✅ What is AWS?
 
 AWS (Amazon Web Services) ek cloud service provider hai jo Amazon ne banaya hai.
 
@@ -43,7 +43,7 @@ AWS companies ko ye facilities deta hai:
 
 ---
 
-## ✅ Benefit from Massive Economies of Scale
+ ✅ Benefit from Massive Economies of Scale
 
 Iska matlab:
 
@@ -59,7 +59,7 @@ AWS crore servers kharidega → sasta
 
 ---
 
-## ✅ Why Companies Are Using Cloud Computing?
+ ✅ Why Companies Are Using Cloud Computing?
 
 Companies cloud use karti hain kyunki:
 
@@ -72,13 +72,13 @@ Companies cloud use karti hain kyunki:
 
 ---
 
-## ✅ AWS Services Stack
+ ✅ AWS Services Stack
 
 AWS services ko mainly 3 layers me samjha jata hai:
 
 ---
 
-### 🟦 1️⃣ Infrastructure Layer
+ 🟦 1️⃣ Infrastructure Layer
 
 Basic building blocks:
 
@@ -91,7 +91,7 @@ Basic building blocks:
 
 ---
 
-### 🟩 2️⃣ Platform Layer
+ 🟩 2️⃣ Platform Layer
 
 Developers ke liye platform:
 
@@ -103,7 +103,7 @@ Developers ke liye platform:
 
 ---
 
-### 🟨 3️⃣ Application Layer
+ 🟨 3️⃣ Application Layer
 
 Ready-to-use services:
 
@@ -115,7 +115,7 @@ Ready-to-use services:
 
 ---
 
-## ✅ One-Page Quick Revision
+ ✅ One-Page Quick Revision
 
  Cloud = Internet par server use karna
  AWS = Amazon ka cloud platform
