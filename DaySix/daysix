@@ -1,8 +1,8 @@
 DAY 6
 
-## 🔹 1. IAAS – Infrastructure as a Service
+ 🔹 1. IAAS – Infrastructure as a Service
 
-### ✅ What is IAAS?
+ ✅ What is IAAS?
 
 IAAS me cloud provider aapko basic IT infrastructure rent par deta hai:
 
@@ -12,27 +12,27 @@ IAAS me cloud provider aapko basic IT infrastructure rent par deta hai:
 
 👉 Aap OS install karte ho, software manage karte ho.
 
-### 🧠 Simple Example:
+ 🧠 Simple Example:
 
 Jaise tum ek khali flat rent par lete ho —
 furniture, TV, AC tum khud lagate ho.
 
-### 📌 Examples:
+ 📌 Examples:
 
  AWS EC2
  Google Compute Engine
  Azure Virtual Machines
 
-### 👨‍💻 Who uses IAAS?
+ 👨‍💻 Who uses IAAS?
 
  System Administrators
  DevOps Engineers
 
 ---
 
-## 🔹 2. PAAS – Platform as a Service
+ 🔹 2. PAAS – Platform as a Service
 
-### ✅ What is PAAS?
+ ✅ What is PAAS?
 
 PAAS me cloud provider:
 
@@ -45,50 +45,50 @@ sab manage karta hai.
 
 👉 Aap sirf code likhte ho aur deploy karte ho.
 
-### 🧠 Simple Example:
+ 🧠 Simple Example:
 
 Jaise furnished flat — sirf rehna hai.
 
-### 📌 Examples:
+ 📌 Examples:
 
  AWS Elastic Beanstalk
  Google App Engine
  Heroku
 
-### 👨‍💻 Who uses PAAS?
+ 👨‍💻 Who uses PAAS?
 
  Developers
  Application teams
 
 ---
 
-## 🔹 3. SAAS – Software as a Service
+ 🔹 3. SAAS – Software as a Service
 
-### ✅ What is SAAS?
+ ✅ What is SAAS?
 
 SAAS me aapko ready-made software milta hai via internet.
 
 👉 Install karne ki zarurat nahi.
 
-### 🧠 Simple Example:
+ 🧠 Simple Example:
 
 Jaise hotel room — sab ready.
 
-### 📌 Examples:
+ 📌 Examples:
 
  Gmail
  Netflix
  Zoom
  Google Docs
 
-### 👨‍💻 Who uses SAAS?
+ 👨‍💻 Who uses SAAS?
 
  End users
  Businesses
 
 ---
 
-## 🔄 IAAS vs PAAS vs SAAS (Short Table)
+ 🔄 IAAS vs PAAS vs SAAS (Short Table)
 
 | Service | Control        |
 | ------- | -------------- |
@@ -98,9 +98,9 @@ Jaise hotel room — sab ready.
 
 ---
 
-# 🖥️ 4. Virtualization
+ 🖥️ 4. Virtualization
 
-### ✅ What is Virtualization?
+ ✅ What is Virtualization?
 
 Virtualization ka matlab:
 
@@ -108,7 +108,7 @@ Virtualization ka matlab:
 
 👉 Ek server → multiple computers jaisa kaam karta hai.
 
-### 🎯 Benefits:
+ 🎯 Benefits:
 
  Cost kam
  Resource utilization better
@@ -116,9 +116,9 @@ Virtualization ka matlab:
 
 ---
 
-## 🔹 5. Hypervisor
+ 🔹 5. Hypervisor
 
-### ✅ What is Hypervisor?
+ ✅ What is Hypervisor?
 
 Hypervisor ek software hai jo:
 
@@ -130,9 +130,9 @@ Hypervisor ek software hai jo:
 
 ---
 
-### 🔸 Types of Hypervisor
+ 🔸 Types of Hypervisor
 
-#### Type 1 (Bare Metal)
+ Type 1 (Bare Metal)
 
  Direct hardware par run karta hai
  Zyada fast & secure
@@ -145,7 +145,7 @@ Hypervisor ek software hai jo:
 
 ---
 
-#### Type 2 (Hosted)
+ Type 2 (Hosted)
 
  OS ke upar run karta hai
 
@@ -156,9 +156,9 @@ Hypervisor ek software hai jo:
 
 ---
 
-## 🌐 6. HTML
+ 🌐 6. HTML
 
-### ✅ What is HTML?
+ ✅ What is HTML?
 
 HTML ka full form:
 
@@ -166,7 +166,7 @@ HTML ka full form:
 
 👉 Ye web pages banane ke kaam aata hai.
 
-### 🧠 Example:
+ 🧠 Example:
 
 ```html
 <h1>Hello Cloud</h1>
@@ -181,9 +181,9 @@ HTML browser ko batata hai:
 
 ---
 
-## 🧑‍💻 7. ROOT User
+ 🧑‍💻 7. ROOT User
 
-### ✅ What is Root?
+ ✅ What is Root?
 
 Root user hota hai:
 
@@ -196,9 +196,9 @@ Root user hota hai:
 
 ---
 
-## 🔐 8. IAM – Identity and Access Management
+ 🔐 8. IAM – Identity and Access Management
 
-### ✅ What is IAM?
+ ✅ What is IAM?
 
 IAM ka use hota hai:
 
@@ -209,13 +209,13 @@ IAM ka use hota hai:
 👉 Ye decide karta hai:
 Kaun kya access kar sakta hai
 
-### 📌 Example:
+ 📌 Example:
 
  Admin
  Developer
  Read-only user
 
-### 🎯 Benefits:
+ 🎯 Benefits:
 
  Better security
  Controlled access
@@ -223,7 +223,7 @@ Kaun kya access kar sakta hai
 
 ---
 
-## 🧠 Quick Revision (One Line Each)
+ 🧠 Quick Revision (One Line Each)
 
  IAAS → Infrastructure rent par
  PAAS → Platform + tools
@@ -236,7 +236,7 @@ Kaun kya access kar sakta hai
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-## ✅ AWS Global Infrastructure kya hota hai?
+ ✅ AWS Global Infrastructure kya hota hai?
 
 AWS Global Infrastructure ka matlab hai:
 
@@ -250,20 +250,20 @@ AWS infrastructure mainly 3 parts me divided hota hai:
 
 ---
 
-## 🌐 1️⃣ Region
+ 🌐 1️⃣ Region
 
-### 🔹 What is a Region?
+ 🔹 What is a Region?
 
 Region ek geographical area (city/country) hota hai jahan AWS ke data centers hote hain.
 
 👉 Tumhara actual application / product yahin run hota hai.
 
-### 🧠 Real-life Example:
+ 🧠 Real-life Example:
 
 Region = Amazon ka main warehouse
 Jahan asli product store hota hai.
 
-### 📌 Example Regions:
+ 📌 Example Regions:
 
  ap-south-1 (Mumbai)
  us-east-1 (N. Virginia)
@@ -271,9 +271,9 @@ Jahan asli product store hota hai.
 
 ---
 
-## 🏢 2️⃣ Availability Zone (AZ)
+ 🏢 2️⃣ Availability Zone (AZ)
 
-### 🔹 What is an AZ?
+ 🔹 What is an AZ?
 
 AZ ek separate data center hota hai jo:
 
@@ -286,11 +286,11 @@ Example:
  ap-south-1b
  ap-south-1c
 
-### 🧠 Real-life Example:
+ 🧠 Real-life Example:
 
 AZ = Ek hi city me multiple warehouses
 
-### 🎯 Why AZ is important?
+ 🎯 Why AZ is important?
 
  Backup
  High availability
@@ -300,28 +300,28 @@ AZ = Ek hi city me multiple warehouses
 
 ---
 
-## 🚚 3️⃣ Edge Location
+ 🚚 3️⃣ Edge Location
 
-### 🔹 What is an Edge Location?
+ 🔹 What is an Edge Location?
 
 Edge location AWS ka delivery point hota hai jo:
 
  User ke paas hota hai
  Content ko fast deliver karta hai
 
-### 🧠 Real-life Example:
+ 🧠 Real-life Example:
 
 Edge location = Delivery boys poore city me
 Jo product users tak jaldi pahunchate hain.
 
-### 📌 Used by:
+ 📌 Used by:
 
  Amazon CloudFront (CDN)
  Low latency delivery
 
 ---
 
-## ⚡ Why Edge Locations are Important?
+ ⚡ Why Edge Locations are Important?
 
  Fast content delivery
  Low latency
@@ -331,7 +331,7 @@ Jo product users tak jaldi pahunchate hain.
 
 ---
 
-## 🧩 Region vs AZ vs Edge Location (Easy Table)
+ 🧩 Region vs AZ vs Edge Location (Easy Table)
 
 | Feature  | Region       | AZ                   | Edge Location  |
 | -------- | ------------ | -------------------- | -------------- |
@@ -341,7 +341,7 @@ Jo product users tak jaldi pahunchate hain.
 
 ---
 
-## 🧠 Complete Real-Life Analogy (Class Style)
+ 🧠 Complete Real-Life Analogy (Class Style)
 
  Region → Amazon warehouse (actual product)
  AZ → Multiple warehouses in same city (backup)
@@ -349,7 +349,7 @@ Jo product users tak jaldi pahunchate hain.
 
 ---
 
-## ✅ One-Line Revision
+ ✅ One-Line Revision
 
  Region = Where app lives
  AZ = Backup & reliability
