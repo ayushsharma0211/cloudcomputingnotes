@@ -1,8 +1,8 @@
 DAY - 3 
 
-# 🐱 GIT Commands 
+ 🐱 GIT Commands 
 
-## 1️⃣ git init
+ 1️⃣ git init
 
 Iska matlab hota hai — naya Git project shuru karna.
 
@@ -17,7 +17,7 @@ Matlab ab tum jo bhi changes karoge, Git unhe save rakh sakta hai.
 
 ---
 
-## 2️⃣ git clone
+ 2️⃣ git clone
 
 Ye command kisi GitHub project ko apne laptop me download karne ke liye hoti hai.
 
@@ -31,7 +31,7 @@ Isse pura project tumhare system par aa jata hai.
 
 ---
 
-## 3️⃣ File open (vi editor)
+ 3️⃣ File open (vi editor)
 
 Linux me file kholne/edit karne ke liye:
 
@@ -47,9 +47,9 @@ vi index.html
 
 ---
 
-# 🐧 LINUX Commands (Hinglish me samjha hua)
+ 🐧 LINUX Commands (Hinglish me samjha hua)
 
-## 1️⃣ pwd — Present Working Directory
+ 1️⃣ pwd — Present Working Directory
 
 Is command se pata chalta hai ki tum abhi kis folder me ho.
 
@@ -59,7 +59,7 @@ pwd
 
 ---
 
-## 2️⃣ ls — List files/folders
+ 2️⃣ ls — List files/folders
 
 Ye command current folder ke andar sab file/folder dikha deti hai.
 
@@ -69,7 +69,7 @@ ls
 
 ---
 
-## 3️⃣ ls -lrt – Details ke saath list
+ 3️⃣ ls -lrt – Details ke saath list
 
  l = long list (details)
  r = reverse order
@@ -85,7 +85,7 @@ Ye zyada professional log use karte hain.
 
 ---
 
-## 4️⃣ cd foldername — Change Directory
+ 4️⃣ cd foldername — Change Directory
 
 Kisi folder ke andar jaane ke liye:
 
@@ -95,7 +95,7 @@ cd foldername
 
 ---
 
-## 5️⃣ cd .. — Ek folder peeche jaana
+ 5️⃣ cd .. — Ek folder peeche jaana
 
 Agar galat folder me chale gaye ho to:
 
@@ -105,7 +105,7 @@ cd ..
 
 ---
 
-## 6️⃣ cd path — Seedha kisi location par jaana
+ 6️⃣ cd path — Seedha kisi location par jaana
 
 Example:
 
@@ -115,7 +115,7 @@ cd /home/ayush/Documents/project
 
 ---
 
-## 7️⃣ mkdir — New folder banana
+ 7️⃣ mkdir — New folder banana
 
 ```bash
 mkdir myfolder
@@ -123,7 +123,7 @@ mkdir myfolder
 
 ---
 
-## 8️⃣ vi filename — File open/edit
+ 8️⃣ vi filename — File open/edit
 
 ```bash
 vi test.txt
@@ -131,7 +131,7 @@ vi test.txt
 
 ---
 
-## 9️⃣ :q! — Force quit (bina save kiye bahar)
+ 9️⃣ :q! — Force quit (bina save kiye bahar)
 
 vi editor me agar bina save kiye bahar nikalna ho:
 
@@ -141,7 +141,7 @@ vi editor me agar bina save kiye bahar nikalna ho:
 
 ---
 
-## 🔟 clear — Terminal clean karna
+ 🔟 clear — Terminal clean karna
 
 Screen ko fresh kar deta hai.
 
@@ -221,7 +221,7 @@ Purane commands aur output hata deta hai taaki screen fresh lage.
 
 ---
 
-# ⭐ Super Simple Hinglish Summary
+ ⭐ Super Simple Hinglish Summary
 
 | Command   | Explanation (Hinglish)                       |
 | --------- | -------------------------------------------- |
@@ -238,5 +238,3 @@ Purane commands aur output hata deta hai taaki screen fresh lage.
 | clear     | Terminal clean                               |
 
 ---
-
-
