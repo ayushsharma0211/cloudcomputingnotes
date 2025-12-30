@@ -2,13 +2,13 @@ DAY 7
 
 ---
 
-# ☁️ Day 7 – Cloud Storage (Detailed + Real-Life Examples)
+ ☁️ Day 7 – Cloud Storage (Detailed + Real-Life Examples)
 
 ---
 
-## 🧱 1. Block Storage
+ 🧱 1. Block Storage
 
-### ✅ Definition
+ ✅ Definition
 
 Block Storage ek aisa storage hota hai jisme data ko chhote-chhote fixed size blocks me divide karke store kiya jata hai.
 Har block ka apna unique address hota hai.
@@ -17,7 +17,7 @@ Har block ka apna unique address hota hai.
 
 ---
 
-### 🧠 Real-Life Example
+ 🧠 Real-Life Example
 
  Computer ki internal hard disk (C: Drive)
  Mobile phone ka internal storage
@@ -26,7 +26,7 @@ OS ko pata hota hai kaunsa block kahan rakha hai.
 
 ---
 
-### 🔍 Deep Understanding
+ 🔍 Deep Understanding
 
  Block storage directly OS ke saath attach hota hai
  OS decide karta hai:
@@ -37,7 +37,7 @@ OS ko pata hota hai kaunsa block kahan rakha hai.
 
 ---
 
-### 🎯 Where Block Storage is Used
+ 🎯 Where Block Storage is Used
 
  Operating System install karna
  Databases (MySQL, Oracle)
@@ -45,9 +45,9 @@ OS ko pata hota hai kaunsa block kahan rakha hai.
 
 ---
 
-### ☁️ AWS Block Storage → EBS (Elastic Block Store)
+ ☁️ AWS Block Storage → EBS (Elastic Block Store)
 
-#### 🔹 What is EBS?
+ 🔹 What is EBS?
 
 EBS ek virtual hard disk hai jo EC2 ke saath attach hoti hai.
 
@@ -60,15 +60,15 @@ Agar EC2 stop ho jaye, data EBS me safe rehta hai.
 
 ---
 
-## 📁 2. File Storage
+ 📁 2. File Storage
 
-### ✅ Definition
+ ✅ Definition
 
 File Storage me data files aur folders ke form me store hota hai, jise multiple users ya systems access kar sakte hain.
 
 ---
 
-### 🧠 Real-Life Example
+ 🧠 Real-Life Example
 
  Office ka shared folder
  Google Drive
@@ -76,7 +76,7 @@ File Storage me data files aur folders ke form me store hota hai, jise multiple 
 
 ---
 
-### 🔍 Deep Understanding
+ 🔍 Deep Understanding
 
  File system already bana hota hai
  User directly files ke saath kaam karta hai
@@ -84,7 +84,7 @@ File Storage me data files aur folders ke form me store hota hai, jise multiple 
 
 ---
 
-### 🎯 Where File Storage is Used
+ 🎯 Where File Storage is Used
 
  Shared documents
  Website files (HTML, CSS, images)
@@ -92,9 +92,9 @@ File Storage me data files aur folders ke form me store hota hai, jise multiple 
 
 ---
 
-### ☁️ AWS File Storage → EFS (Elastic File System)
+ ☁️ AWS File Storage → EFS (Elastic File System)
 
-#### 🔹 What is EFS?
+ 🔹 What is EFS?
 
 EFS ek managed file system hai jo:
 
@@ -107,9 +107,9 @@ EFS ek managed file system hai jo:
 
 ---
 
-## 🪣 3. Object Storage
+ 🪣 3. Object Storage
 
-### ✅ Definition
+ ✅ Definition
 
 Object Storage me data objects ke form me store hota hai.
 Har object ke paas hota hai:
@@ -122,7 +122,7 @@ Har object ke paas hota hai:
 
 ---
 
-### 🧠 Real-Life Example
+ 🧠 Real-Life Example
 
  Google Photos
  YouTube videos
@@ -132,7 +132,7 @@ Tum file ka location ya block nahi jante, sirf object name jante ho.
 
 ---
 
-### 🔍 Deep Understanding
+ 🔍 Deep Understanding
 
  Object storage highly scalable hota hai
  Internet ke through access hota hai
@@ -140,7 +140,7 @@ Tum file ka location ya block nahi jante, sirf object name jante ho.
 
 ---
 
-### 🎯 Where Object Storage is Used
+ 🎯 Where Object Storage is Used
 
  Images, videos
  Backups
@@ -149,9 +149,9 @@ Tum file ka location ya block nahi jante, sirf object name jante ho.
 
 ---
 
-### ☁️ AWS Object Storage → S3 (Simple Storage Service)
+ ☁️ AWS Object Storage → S3 (Simple Storage Service)
 
-#### 🔹 What is S3?
+ 🔹 What is S3?
 
 S3 AWS ka object storage service hai jisme data buckets me store hota hai.
 
@@ -165,7 +165,7 @@ S3 ka durability hota hai 99.999999999% (11 9s).
 
 ---
 
-## 🔄 Block vs File vs Object (Deep Comparison)
+ 🔄 Block vs File vs Object (Deep Comparison)
 
 | Feature        | Block     | File          | Object    |
 | -------------- | --------- | ------------- | --------- |
@@ -177,7 +177,7 @@ S3 ka durability hota hai 99.999999999% (11 9s).
 
 ---
 
-## 🧠 Real-World Scenario (Easy to Remember)
+ 🧠 Real-World Scenario (Easy to Remember)
 
 🏠 House Example
 
@@ -187,7 +187,7 @@ S3 ka durability hota hai 99.999999999% (11 9s).
 
 ---
 
-## ✅ One-Line Definitions (Exam Ready)
+ ✅ One-Line Definitions (Exam Ready)
 
  Block Storage → Disk-level storage
  File Storage → Shared file system
@@ -195,7 +195,7 @@ S3 ka durability hota hai 99.999999999% (11 9s).
 
 ---
 
-## 🎯 AWS Use Summary
+ 🎯 AWS Use Summary
 
  EBS → EC2 OS & database
  EFS → Shared website files
