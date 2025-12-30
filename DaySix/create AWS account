@@ -1,9 +1,9 @@
 Day - 6 
 
-# ☁️ How to Create an AWS Account – Detailed Notes 
+ ☁️ How to Create an AWS Account – Detailed Notes 
 ---
 
-## ✅ AWS Account kya hota hai?
+ ✅ AWS Account kya hota hai?
 
 AWS account ek master account hota hai jiske through aap:
 
@@ -15,7 +15,7 @@ AWS account ek master account hota hai jiske through aap:
 
 ---
 
-## 🧾 AWS Account Create Karne ke Requirements
+ 🧾 AWS Account Create Karne ke Requirements
 
 AWS account banane se pehle ye cheezein ready honi chahiye:
 
@@ -29,11 +29,11 @@ AWS ₹0 ya $0.01 temporarily charge karta hai (verification only).
 
 ---
 
-## 🪜 Step-by-Step: AWS Account Creation Process
+ 🪜 Step-by-Step: AWS Account Creation Process
 
 ---
 
-### 🔹 Step 1: AWS Website Open karo
+ 🔹 Step 1: AWS Website Open karo
 
 Browser me jao aur search karo:
 
@@ -43,7 +43,7 @@ Browser me jao aur search karo:
 
 ---
 
-### 🔹 Step 2: Email & Password Setup
+ 🔹 Step 2: Email & Password Setup
 
  Email ID enter karo
  AWS account name do
@@ -53,14 +53,14 @@ Browser me jao aur search karo:
 
 ---
 
-### 🔹 Step 3: Contact Information
+ 🔹 Step 3: Contact Information
 
  Account type select karo (Personal / Business)
  Name, address, phone number fill karo
 
 ---
 
-### 🔹 Step 4: Payment Information
+ 🔹 Step 4: Payment Information
 
  Debit / Credit card details enter karo
 
@@ -68,29 +68,29 @@ Browser me jao aur search karo:
 
 ---
 
-### 🔹 Step 5: Identity Verification
+ 🔹 Step 5: Identity Verification
 
  Mobile number verify hota hai
  OTP ya call ke through verification hoti hai
 
 ---
 
-### 🔹 Step 6: Support Plan Select karo
+ 🔹 Step 6: Support Plan Select karo
 
  Basic (Free) select karo (Beginners ke liye best)
 
 ---
 
-### 🔹 Step 7: Account Created Successfully 🎉
+ 🔹 Step 7: Account Created Successfully 🎉
 
  AWS confirmation email bhejta hai
  Ab tum AWS Management Console me login kar sakte ho
 
 ---
 
-## 🔐 Root User Login (Important Concept)
+ 🔐 Root User Login (Important Concept)
 
-### ✅ Root User kya hota hai?
+ ✅ Root User kya hota hai?
 
 Root user:
 
@@ -104,7 +104,7 @@ Root user:
 
 ---
 
-## 🎯 AWS Free Tier (Important)
+ 🎯 AWS Free Tier (Important)
 
 AWS new users ko deta hai:
 
@@ -115,7 +115,7 @@ AWS new users ko deta hai:
 
 ---
 
-## 🧠 Common Beginner Mistakes
+ 🧠 Common Beginner Mistakes
 
  Root user se daily kaam karna
  Resources delete na karna (billing issue)
@@ -123,7 +123,7 @@ AWS new users ko deta hai:
 
 ---
 
-## ✅ Quick Revision (One Lines)
+ ✅ Quick Revision (One Lines)
 
  AWS account = Cloud access gate
  Root user = Full control
