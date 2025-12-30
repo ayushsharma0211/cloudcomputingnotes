@@ -1,15 +1,15 @@
 
-# ☁️ Day 9 – AWS S3 Permissions & Policies (Detailed Notes)
+ ☁️ Day 9 – AWS S3 Permissions & Policies (Detailed Notes)
 
 ---
 
-## 🪣 1. S3 Bucket Creation (Quick Recap)
+ 🪣 1. S3 Bucket Creation (Quick Recap)
 
-### ✅ Definition
+ ✅ Definition
 
 S3 Bucket ek container hota hai jisme objects (files, images, videos, backups) store hote hain.
 
-### 🔹 Steps
+ 🔹 Steps
 
 1. AWS Console me login
 2. Search S3
@@ -20,9 +20,9 @@ S3 Bucket ek container hota hai jisme objects (files, images, videos, backups) s
 
 ---
 
-## 🔐 2. S3 Bucket Permissions – Basics
+ 🔐 2. S3 Bucket Permissions – Basics
 
-### ✅ What are Permissions?
+ ✅ What are Permissions?
 
 Permissions decide karti hain:
 
@@ -30,7 +30,7 @@ Permissions decide karti hain:
 
 ---
 
-### 🔹 Types of S3 Permissions
+ 🔹 Types of S3 Permissions
 
 AWS S3 me permissions manage hoti hain:
 
@@ -42,15 +42,15 @@ AWS S3 me permissions manage hoti hain:
 
 ---
 
-## 📜 3. S3 Bucket Policy
+ 📜 3. S3 Bucket Policy
 
-### ✅ Definition
+ ✅ Definition
 
 Bucket Policy ek resource-based policy hoti hai jo directly S3 bucket par apply hoti hai aur JSON format me likhi jaati hai.
 
 ---
 
-### 🔹 Important Policy Elements
+ 🔹 Important Policy Elements
 
  Effect → Allow / Deny
  Principal → Kaun access karega
@@ -59,9 +59,9 @@ Bucket Policy ek resource-based policy hoti hai jo directly S3 bucket par apply 
 
 ---
 
-## 📄 4. JSON Policy (Basics + Code Understanding)
+ 📄 4. JSON Policy (Basics + Code Understanding)
 
-### ✅ What is JSON?
+ ✅ What is JSON?
 
 JSON (JavaScript Object Notation) ek lightweight data format hai jo data ko key–value pairs me represent karta hai.
 
@@ -69,7 +69,7 @@ JSON (JavaScript Object Notation) ek lightweight data format hai jo data ko key�
 
 ---
 
-### 🔹 Sample S3 Bucket Policy (Public Read)
+ 🔹 Sample S3 Bucket Policy (Public Read)
 
 ```json
 {
@@ -87,7 +87,7 @@ JSON (JavaScript Object Notation) ek lightweight data format hai jo data ko key�
 
 ---
 
-### 🧠 Code Explanation
+ 🧠 Code Explanation
 
  Version → Policy language version
  Statement → Rules ka set
@@ -98,9 +98,9 @@ JSON (JavaScript Object Notation) ek lightweight data format hai jo data ko key�
 
 ---
 
-## 🛠️ 5. AWS Policy Generator
+ 🛠️ 5. AWS Policy Generator
 
-### ✅ What is AWS Policy Generator?
+ ✅ What is AWS Policy Generator?
 
 AWS Policy Generator ek online AWS tool hai jo JSON policies automatically generate karta hai.
 
@@ -108,7 +108,7 @@ AWS Policy Generator ek online AWS tool hai jo JSON policies automatically gener
 
 ---
 
-### 🔹 How You Used AWS Policy Generator
+ 🔹 How You Used AWS Policy Generator
 
 1. Open AWS Policy Generator
 2. Select policy type → S3 Bucket Policy
@@ -120,9 +120,9 @@ AWS Policy Generator ek online AWS tool hai jo JSON policies automatically gener
 
 ---
 
-## 🚫 6. Real Problem Faced & Solution
+ 🚫 6. Real Problem Faced & Solution
 
-### ❌ Problem
+ ❌ Problem
 
  S3 bucket me uploaded file open nahi ho rahi thi
  URL ke through access blocked tha
@@ -131,7 +131,7 @@ AWS Policy Generator ek online AWS tool hai jo JSON policies automatically gener
 
 ---
 
-### ✅ Solution
+ ✅ Solution
 
  AWS Policy Generator ka use karke public read bucket policy generate ki
  Generated JSON policy ko bucket policy section me paste kiya
@@ -139,9 +139,9 @@ AWS Policy Generator ek online AWS tool hai jo JSON policies automatically gener
 
 ---
 
-## 🌐 7. URL Access via Policy
+ 🌐 7. URL Access via Policy
 
-### ✅ Learning
+ ✅ Learning
 
  S3 object ko URL se access karne ke liye:
 
@@ -152,7 +152,7 @@ AWS Policy Generator ek online AWS tool hai jo JSON policies automatically gener
 
 ---
 
-## 🧠 8. What You Learned Today (Day 9)
+ 🧠 8. What You Learned Today (Day 9)
 
  S3 bucket creation
  S3 permissions & policies
@@ -162,7 +162,7 @@ AWS Policy Generator ek online AWS tool hai jo JSON policies automatically gener
 
 ---
 
-## ✅ One-Line Revision
+ ✅ One-Line Revision
 
  Bucket → Storage container
  Policy → Access control
