@@ -1,206 +1,206 @@
-# ☁️ **Day 10 – Amazon S3 Storage Classes (Detailed Notes)**
+ ☁️ Day 10 – Amazon S3 Storage Classes (Detailed Notes)
 
 ---
 
-## 📦 **What are S3 Storage Classes?**
+ 📦 What are S3 Storage Classes?
 
-### ✅ Definition
+ ✅ Definition
 
-Amazon S3 Storage Classes alag-alag **data access patterns** ke liye design ki gayi storage options hoti hain.
+Amazon S3 Storage Classes alag-alag data access patterns ke liye design ki gayi storage options hoti hain.
 
 👉 Matlab:
 
-* Data **kitni baar access hota hai**
-* Data **kitne time ke liye store karna hai**
-* **Cost vs access speed**
+ Data kitni baar access hota hai
+ Data kitne time ke liye store karna hai
+ Cost vs access speed
 
 In sab ke basis par storage class choose ki jaati hai.
 
 ---
 
-## 🧠 **Basic Rule (Easy to Remember)**
+ 🧠 Basic Rule (Easy to Remember)
 
-* **Zyada access → zyada cost**
-* **Kam access → kam cost**
-* **Fast access → mehnga**
-* **Slow access → sasta**
-
----
-
-## 🟢 **1. S3 Standard**
-
-### ✅ Definition
-
-S3 Standard ek **general-purpose storage class** hai jo **frequently accessed data** ke liye use hoti hai.
+ Zyada access → zyada cost
+ Kam access → kam cost
+ Fast access → mehnga
+ Slow access → sasta
 
 ---
 
-### 🔍 Key Features
+ 🟢 1. S3 Standard
 
-* Millisecond access
-* High availability & durability
-* No minimum storage duration
+ ✅ Definition
 
----
-
-### 🧠 Real-Life Example
-
-* Website images
-* Videos
-* Mobile app data
+S3 Standard ek general-purpose storage class hai jo frequently accessed data ke liye use hoti hai.
 
 ---
 
-### 🎯 Use Case
+ 🔍 Key Features
 
-* Data jo **daily ya frequently access** hota hai
+ Millisecond access
+ High availability & durability
+ No minimum storage duration
 
 ---
 
-## 🔵 **2. S3 Intelligent-Tiering**
+ 🧠 Real-Life Example
 
-### ✅ Definition
+ Website images
+ Videos
+ Mobile app data
 
-S3 Intelligent-Tiering automatically data ko **different access tiers** me move karta hai based on usage.
+---
+
+ 🎯 Use Case
+
+ Data jo daily ya frequently access hota hai
+
+---
+
+ 🔵 2. S3 Intelligent-Tiering
+
+ ✅ Definition
+
+S3 Intelligent-Tiering automatically data ko different access tiers me move karta hai based on usage.
 
 👉 Tumhe manually decide karne ki zarurat nahi.
 
 ---
 
-### 🔍 How it Works
+ 🔍 How it Works
 
-* Frequently accessed → Frequent tier
-* 30 days no access → Infrequent tier
-* 90 days no access → Archive tier
-* 180 days no access → Deep Archive tier
-
----
-
-### 🧠 Real-Life Example
-
-* YouTube videos (kab viral ho jaaye pata nahi)
-* Logs jinka access pattern unknown ho
+ Frequently accessed → Frequent tier
+ 30 days no access → Infrequent tier
+ 90 days no access → Archive tier
+ 180 days no access → Deep Archive tier
 
 ---
 
-### 🎯 Use Case
+ 🧠 Real-Life Example
 
-* Jab data ka **future access pattern unknown** ho
-
----
-
-## 🟡 **3. S3 Standard-Infrequent Access (S3 Standard-IA)**
-
-### ✅ Definition
-
-Long-lived data jo **kam access hota hai**, lekin jab chahiye to **fast access** chahiye.
+ YouTube videos (kab viral ho jaaye pata nahi)
+ Logs jinka access pattern unknown ho
 
 ---
 
-### 🔍 Key Features
+ 🎯 Use Case
 
-* Lower storage cost than Standard
-* Millisecond access
-* Retrieval cost lagta hai
+ Jab data ka future access pattern unknown ho
 
 ---
 
-### 🧠 Real-Life Example
+ 🟡 3. S3 Standard-Infrequent Access (S3 Standard-IA)
 
-* Backup files
-* Disaster recovery data
+ ✅ Definition
 
----
-
-## 🟠 **4. S3 One Zone-Infrequent Access (S3 One Zone-IA)**
-
-### ✅ Definition
-
-S3 Standard-IA jaisa hi hai, bas data **sirf ek Availability Zone** me store hota hai.
+Long-lived data jo kam access hota hai, lekin jab chahiye to fast access chahiye.
 
 ---
 
-### 🔍 Key Features
+ 🔍 Key Features
 
-* Cost aur kam
-* Single AZ (less durable)
-
----
-
-### 🧠 Real-Life Example
-
-* Re-creatable data
-* Temporary backups
+ Lower storage cost than Standard
+ Millisecond access
+ Retrieval cost lagta hai
 
 ---
 
-## ❄️ **5. S3 Glacier Instant Retrieval**
+ 🧠 Real-Life Example
 
-### ✅ Definition
-
-Archive data ke liye jise **kabhi-kabhi turant access** chahiye.
-
----
-
-### 🔍 Key Features
-
-* Low storage cost
-* Millisecond retrieval
+ Backup files
+ Disaster recovery data
 
 ---
 
-### 🧠 Use Case
+ 🟠 4. S3 One Zone-Infrequent Access (S3 One Zone-IA)
 
-* Medical records
-* Compliance data
+ ✅ Definition
 
----
-
-## ❄️ **6. S3 Glacier Flexible Retrieval (Earlier: Glacier)**
-
-### ✅ Definition
-
-Long-term archive data jise **rarely access** kiya jata hai.
+S3 Standard-IA jaisa hi hai, bas data sirf ek Availability Zone me store hota hai.
 
 ---
 
-### 🔍 Key Features
+ 🔍 Key Features
 
-* Retrieval time: minutes to hours
-* Storage cost low
-
----
-
-### 🧠 Use Case
-
-* Audit logs
-* Old backups
+ Cost aur kam
+ Single AZ (less durable)
 
 ---
 
-## 🧊 **7. S3 Glacier Deep Archive**
+ 🧠 Real-Life Example
 
-### ✅ Definition
-
-Sabse **sasta storage class**, long-term data ke liye jise **bahut kam access** kiya jata hai.
-
----
-
-### 🔍 Key Features
-
-* Retrieval time: hours
-* Lowest cost
+ Re-creatable data
+ Temporary backups
 
 ---
 
-### 🧠 Real-Life Example
+ ❄️ 5. S3 Glacier Instant Retrieval
 
-* 7–10 saal purane records
-* Legal archives
+ ✅ Definition
+
+Archive data ke liye jise kabhi-kabhi turant access chahiye.
 
 ---
 
-## 📊 **Storage Classes Comparison (Easy Table)**
+ 🔍 Key Features
+
+ Low storage cost
+ Millisecond retrieval
+
+---
+
+ 🧠 Use Case
+
+ Medical records
+ Compliance data
+
+---
+
+ ❄️ 6. S3 Glacier Flexible Retrieval (Earlier: Glacier)
+
+ ✅ Definition
+
+Long-term archive data jise rarely access kiya jata hai.
+
+---
+
+ 🔍 Key Features
+
+ Retrieval time: minutes to hours
+ Storage cost low
+
+---
+
+ 🧠 Use Case
+
+ Audit logs
+ Old backups
+
+---
+
+ 🧊 7. S3 Glacier Deep Archive
+
+ ✅ Definition
+
+Sabse sasta storage class, long-term data ke liye jise bahut kam access kiya jata hai.
+
+---
+
+ 🔍 Key Features
+
+ Retrieval time: hours
+ Lowest cost
+
+---
+
+ 🧠 Real-Life Example
+
+ 7–10 saal purane records
+ Legal archives
+
+---
+
+ 📊 Storage Classes Comparison (Easy Table)
 
 | Storage Class       | Access     | Cost      | Use Case       |
 | ------------------- | ---------- | --------- | -------------- |
@@ -214,25 +214,25 @@ Sabse **sasta storage class**, long-term data ke liye jise **bahut kam access** 
 
 ---
 
-## 🧠 **Hotel Example (Class Explanation Style)**
+ 🧠 Hotel Example (Class Explanation Style)
 
-* **City Center Hotel** → S3 Standard (mehnga, fast)
-* **Outskirts Hotel** → Standard-IA
-* **Village Hotel** → Glacier
-* **Store Room Godown** → Deep Archive
+ City Center Hotel → S3 Standard (mehnga, fast)
+ Outskirts Hotel → Standard-IA
+ Village Hotel → Glacier
+ Store Room Godown → Deep Archive
 
 👉 Stay = Storage cost
 👉 Taxi = Access cost
 
 ---
 
-## ✅ **One-Line Revision**
+ ✅ One-Line Revision
 
-* Standard → Hot data
-* Intelligent-Tiering → Smart movement
-* IA → Warm data
-* Glacier → Cold data
-* Deep Archive → Frozen data
+ Standard → Hot data
+ Intelligent-Tiering → Smart movement
+ IA → Warm data
+ Glacier → Cold data
+ Deep Archive → Frozen data
 
 ---
 
