@@ -1,11 +1,11 @@
 DAY - 4 
 
-# 🌳 Trunk Based Branch Strategy (Simple Words me)
+ 🌳 Trunk Based Branch Strategy (Simple Words me)
 
 Is diagram ka main idea hai:
 👉 Main branch ek tree ka trunk hota hai, aur baaki branches usse nikalti hain.
 
-### Branch Types:
+ Branch Types:
 
  main (M) → main / production branch (stable code)
  feature (F) → new feature banane ke liye
@@ -16,9 +16,9 @@ Is diagram ka main idea hai:
 
 ---
 
-# 🖥️ Local → Git (GitHub tak code bhejna)
+ 🖥️ Local → Git (GitHub tak code bhejna)
 
-### ✅ Step 1: Git user setup (ek baar hi hota hai)
+ ✅ Step 1: Git user setup (ek baar hi hota hai)
 
 ```bash
 git config --global user.name "UserName"
@@ -29,7 +29,7 @@ git config --global user.email "your@email.com"
 
 ---
 
-### ✅ Step 2: Git start karna
+ ✅ Step 2: Git start karna
 
 ```bash
 git init
@@ -39,7 +39,7 @@ git init
 
 ---
 
-### ✅ Step 3: Status check karna
+ ✅ Step 3: Status check karna
 
 ```bash
 git status
@@ -53,7 +53,7 @@ git status
 
 ---
 
-### ✅ Step 4: File create karna
+ ✅ Step 4: File create karna
 
 Example:
 
@@ -65,7 +65,7 @@ vi index.html
 
 ---
 
-### ✅ Step 5: File ko staging me dalna
+ ✅ Step 5: File ko staging me dalna
 
 ```bash
 git add .
@@ -81,7 +81,7 @@ git add filename
 
 ---
 
-### ✅ Step 6: Commit karna
+ ✅ Step 6: Commit karna
 
 ```bash
 git commit -m "message"
@@ -92,7 +92,7 @@ Message batata hai kya change kiya
 
 ---
 
-### ✅ Step 7: GitHub se connect karna
+ ✅ Step 7: GitHub se connect karna
 
 ```bash
 git remote add origin <repo-url>
@@ -102,7 +102,7 @@ git remote add origin <repo-url>
 
 ---
 
-### ✅ Step 8: Latest code lana (pull)
+ ✅ Step 8: Latest code lana (pull)
 
 ```bash
 git pull
@@ -112,7 +112,7 @@ git pull
 
 ---
 
-### ✅ Step 9: Code GitHub par bhejna
+ ✅ Step 9: Code GitHub par bhejna
 
 ```bash
 git push -u origin main
@@ -128,9 +128,9 @@ git push
 
 ---
 
-# 🔄 Git → Local (GitHub se code lana)
+ 🔄 Git → Local (GitHub se code lana)
 
-### ✅ Clone command
+ ✅ Clone command
 
 ```bash
 git clone <url>
@@ -140,9 +140,9 @@ git clone <url>
 
 ---
 
-# 🌿 Branching (Most Important Part)
+ 🌿 Branching (Most Important Part)
 
-## ✅ Branch list dekhna
+ ✅ Branch list dekhna
 
 ```bash
 git branch
@@ -150,7 +150,7 @@ git branch
 
 ---
 
-## ✅ New branch banana
+ ✅ New branch banana
 
 ```bash
 git branch branchname
@@ -158,7 +158,7 @@ git branch branchname
 
 ---
 
-## ✅ Branch switch karna
+ ✅ Branch switch karna
 
 ```bash
 git checkout branchname
@@ -166,7 +166,7 @@ git checkout branchname
 
 ---
 
-## ✅ Create + switch ek saath
+ ✅ Create + switch ek saath
 
 ```bash
 git checkout -b branchname
@@ -176,7 +176,7 @@ git checkout -b branchname
 
 ---
 
-## ✅ Branch merge karna
+ ✅ Branch merge karna
 
 ```bash
 git merge branchname
@@ -186,7 +186,7 @@ git merge branchname
 
 ---
 
-# 🧠 Diagram ko simple example se samjho
+ 🧠 Diagram ko simple example se samjho
 
  main → Live website
  feature → New button / page banaya
@@ -195,7 +195,7 @@ git merge branchname
 
 ---
 
-# ✅ One Line Revision
+ ✅ One Line Revision
 
  `git init` → Git start
  `git add` → staging
