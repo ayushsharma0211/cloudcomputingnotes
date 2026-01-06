@@ -1,1 +1,157 @@
+ 📘 Day 14 – Web Basics + AWS S3 Static Website Hosting
+
+ 1️⃣ Website Architecture – Frontend, Backend & Database
+
+ 🔹 Frontend (Client Side)
+
+Definition:
+Frontend wo part hota hai jo user ko screen par dikhta hai aur jiske saath user interact karta hai.
+
+Technologies Used:
+→ HTML – structure banane ke liye
+→ CSS – design, color, layout ke liye
+→ JavaScript – interactivity & logic ke liye
+
+Example:
+Buttons, forms, navigation bar, footer, images, text
+
+👉 Agar sirf HTML + CSS + JS use ho aur koi server logic na ho, to website Static Website hoti hai.
+
+---
+
+ 🔹 Backend (Server Side)
+
+Definition:
+Backend wo logic hota hai jo background me kaam karta hai.
+Ye decide karta hai:
+
+ Data kaise process hoga
+ User request ka response kya hoga
+
+Example:
+Login system, payment processing, order management
+
+👉 Dynamic websites ke liye backend zaroori hota hai.
+
+---
+
+ 🔹 Database
+
+Definition:
+Database wo jagah hoti hai jahan data store hota hai.
+
+Type Studied:
+RDBMS – Relational Database Management System
+
+Key Point:
+→ Data tables (rows & columns) ke form me store hota hai
+
+Example:
+Users table, Products table, Orders table
+
+---
+
+ 2️⃣ Static vs Dynamic Website
+
+ 🔹 Static Website
+
+ Sirf HTML, CSS, JS
+ Content fixed hota hai
+ Fast & low cost
+ Server logic nahi hota
+
+Example:
+Portfolio website, simple business website
+
+---
+
+ 🔹 Dynamic Website
+
+ Frontend + Backend + Database
+ Content user ke according change hota hai
+ Login, forms, dashboard possible
+
+Example:
+E-commerce website, social media, banking portals
+
+---
+
+ 3️⃣ Web Page Structure (HTML Basics)
+
+HTML File Format:
+→ `.html`
+
+Basic Structure:
+
+ `<head>` → title, metadata, CSS links
+ `<body>` → actual visible content
+ Elements: title, paragraphs, headings, images, links
+
+---
+
+ 4️⃣ CSS Basics
+
+Purpose:
+Website ka design improve karna
+→ color add karna
+→ layout banana
+→ navigation bar aur footer design karna
+
+---
+
+ 5️⃣ JavaScript (Intro)
+
+Purpose:
+Website me logic aur interactivity add karna
+→ button click actions
+→ form validation
+→ dynamic effects
+
+---
+
+ 6️⃣ Web Hosting Concept
+
+Hosting ka matlab:
+Website files ko internet par rakhna taaki koi bhi browser se access kar sake.
+
+---
+
+ 7️⃣ AWS S3 Static Website Hosting (Hands-On)
+
+ 🔹 What You Did:
+
+Tumne apni static website ko AWS S3 bucket ke through live host kiya.
+
+ 🔹 Process (Conceptual Steps):
+
+1. HTML, CSS, JS files ready ki
+2. AWS S3 me ek bucket create ki
+3. Website files upload ki
+4. Static website hosting enable ki bucket properties se
+5. Public access permissions set ki
+6. S3 website endpoint ke through website live ho gayi
+
+👉 Result:
+Tumhari static website internet par accessible ho gayi.
+
+---
+
+ 8️⃣ Mini Project
+
+What You Achieved:
+
+ Frontend structure banaya
+ Styling apply ki
+ AWS S3 ka use karke website host ki
+ Real-world deployment ka experience mila
+
+---
+
+ 🧠 Key Learnings Summary
+
+→ Frontend, Backend aur Database ka clear concept
+→ Static vs Dynamic website ka difference
+→ HTML, CSS, JS ka role
+→ AWS S3 par Static Website Hosting
+→ Real deployment through a mini project
 
