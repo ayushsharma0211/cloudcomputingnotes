@@ -1,1 +1,236 @@
+☁️ DAY 13 – Amazon S3 (Complete Hands-On Notes)
+
+👉 “Today I completed Amazon S3 with full hands-on practice.”
+
+---
+
+ 📌 1. What is Amazon S3?
+
+ ✅ Definition
+
+Amazon S3 (Simple Storage Service) ek object-based cloud storage service hai jahan:
+
+ Data Bucket ke andar store hota hai
+ Har file ko Object bola jata hai
+ Highly durable (99.999999999%), scalable aur secure hota hai
+
+---
+
+ 🧠 Real-Life Example
+
+Google Drive / OneDrive jaise — lekin enterprise level par.
+
+---
+
+ 🪣 2. S3 Bucket & Objects
+
+ 🔹 Bucket
+
+ Top-level container hota hai
+ Region specific hota hai
+ Name globally unique hona chahiye
+
+ 🔹 Object
+
+ Actual file (image, video, pdf, backup, logs)
+ Object = File + Metadata + Permissions
+
+---
+
+ ⚙️ 3. Bucket Creation (Hands-On)
+
+ Steps:
+
+1. AWS Console login
+2. Search → S3
+3. Create Bucket
+4. Unique name + Region select
+5. Default settings → Create
+
+✔ Bucket successfully created
+
+---
+
+ 🔐 4. Permissions, Policies & Access Control
+
+ 🔹 ACL (Access Control List)
+
+ Basic permission system
+ Object / bucket level access
+
+ 🔹 Bucket Policy (JSON)
+
+ Advanced access control
+ Public access, IP based access, user based access
+ JSON format me likhi jati hai
+
+---
+
+ 🧾 5. JSON Policy (Understanding)
+
+ ✅ JSON kya hai?
+
+JavaScript Object Notation – ek data format jo policies likhne ke liye use hota hai.
+
+ 🧠 Use in S3
+
+ Kaun access karega
+ Kaunse actions allowed hain (GetObject, PutObject, DeleteObject)
+
+---
+
+ 🔁 6. Bucket Versioning
+
+ ✅ Definition
+
+Versioning ON karne par:
+👉 File update replace nahi hoti,
+👉 New version create hota hai
+👉 Old versions safe rehte hain
+
+ 🎯 Use:
+
+ Accidental delete se recovery
+ Data protection
+ Replication ke liye mandatory
+
+---
+
+ 🔄 7. Lifecycle Rules
+
+ ✅ Definition
+
+Lifecycle policy automatically:
+
+ Data ko cheaper storage me move karti hai
+ Old data delete karti hai
+
+ 🧠 Example
+
+ 30 days → Standard-IA
+ 90 days → Glacier
+ 365 days → Delete
+
+✔ Cost optimization
+
+---
+
+ ❄️ 8. Storage Classes
+
+| Class                | Use                      |
+| -------------------- | ------------------------ |
+| S3 Standard          | Frequently accessed data |
+| Intelligent-Tiering  | Unknown access pattern   |
+| Standard-IA          | Infrequent access        |
+| One Zone-IA          | Single AZ backup         |
+| Glacier              | Archival storage         |
+| Glacier Deep Archive | Long-term archive        |
+
+---
+
+ 🔁 9. S3 Replication
+
+ Types:
+
+ SRR → Same Region
+ CRR → Cross Region
+
+ Important:
+
+✔ Replication = Asynchronous
+✔ Versioning must be Enabled
+
+ Use:
+
+ Disaster recovery
+ Compliance
+ Global access
+
+---
+
+ 🚀 10. Transfer Acceleration & CDN
+
+ 🔹 Transfer Acceleration
+
+ Edge locations use karke fast upload/download
+ Global users ke liye
+
+ 🔹 CDN (CloudFront)
+
+ Content nearest location se deliver hota hai
+ Faster website & streaming
+
+---
+
+ ❄️ 11. Amazon S3 Glacier
+
+ ✅ Definition
+
+Low-cost archival storage for:
+
+ Rarely accessed data
+ Long-term backups
+ Legal / audit records
+
+ Retrieval:
+
+ Minutes to hours
+ But very cheap storage
+
+---
+
+ 💻 12. AWS CLI with S3
+
+ Use:
+
+ Upload
+ Download
+ Delete
+ Automation
+
+CLI → Faster than console for bulk work
+
+---
+
+ 🔒 13. Security Features
+
+✔ Bucket Policies
+✔ IAM Roles
+✔ Public Access Block
+✔ Encryption (Server-side / Client-side)
+✔ MFA Delete
+
+---
+
+ 🧠 14. What I Practiced (Hands-On)
+
+✔ Bucket creation
+✔ File upload & download
+✔ Permissions & policies
+✔ Public & private access
+✔ Versioning enable
+✔ Lifecycle rules
+✔ Storage class transition
+✔ Replication setup
+✔ Transfer acceleration
+✔ Glacier understanding
+✔ CLI basics
+
+---
+
+ 🏁 DAY 13 CONCLUSION
+
+👉 I now have end-to-end understanding of Amazon S3
+👉 From basic storage → security → cost optimization → replication → archival
+👉 With complete hands-on practice
+
+---
+
+ 📌 One-Line Summary (Revision)
+
+> Amazon S3 is a secure, scalable, cost-optimized object storage service that supports versioning, lifecycle automation, replication, CDN acceleration, and archival through Glacier.
+
+---
+
+
 
