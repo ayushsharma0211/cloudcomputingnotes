@@ -1,1 +1,263 @@
+📘 DAY 15 – COMPUTE BASICS (HYPERVISOR & EC2)
+
+---
+
+ 1️⃣ What is Computing?
+
+Definition:
+Computing ka matlab hota hai data ko process karna using CPU, Memory, Storage aur Network.
+
+👉 Simple words me:
+Input → Process → Output
+
+---
+
+ 2️⃣ Server Kya Hota Hai?
+
+Server:
+Ek powerful computer jo clients ko service deta hai (website, app, database, files, etc.)
+
+Server ka kaam:
+→ Request receive karna
+→ Process karna
+→ Response dena
+
+---
+
+ 3️⃣ Old System vs Cloud System
+
+ 🔹 Old Physical System
+
+CPU → OS → Application
+Single machine = limited power
+Maintenance, hardware failure, scaling problem
+
+---
+
+ 🔹 Virtual / Cloud System
+
+CPU (Host Machine)
+→ Hypervisor
+→ Multiple Virtual Machines (VMs)
+→ Each VM has its own OS + App
+
+👉 Ek physical machine par multiple servers chalte hain.
+
+---
+
+ 4️⃣ Hypervisor (Very Important)
+
+ 🔹 Hypervisor Kya Hota Hai?
+
+Definition:
+Hypervisor ek software hota hai jo ek physical machine par multiple virtual machines (VMs) banata aur manage karta hai.
+
+👉 Ye CPU, Memory, Storage ko share karke alag-alag VMs ko deta hai.
+
+---
+
+ 🔹 Hypervisor Ka Role
+
+→ Virtual machines create karta hai
+→ Resources allocate karta hai (CPU, RAM, Disk)
+→ Isolation maintain karta hai (ek VM dusre ko affect na kare)
+→ Performance aur security manage karta hai
+
+---
+
+ 🔹 Example of Hypervisors
+
+→ VMware
+→ Oracle VirtualBox
+→ Microsoft Hyper-V
+→ KVM (Linux)
+
+---
+
+ 🔹 Simple Diagram
+
+Physical Machine
+→ Hypervisor
+→ VM 1 (OS + App)
+→ VM 2 (OS + App)
+→ VM 3 (OS + App)
+
+---
+
+ 5️⃣ Cloud Computing Kya Hai?
+
+Definition:
+Cloud computing me servers, storage, database, network internet ke through rent par milte hain.
+
+👉 Tumhe hardware kharidne ki zarurat nahi
+👉 Pay only for what you use
+👉 Easily scale up/down
+
+---
+
+ 6️⃣ AWS Compute Service – EC2
+
+ 🔹 EC2 Kya Hai?
+
+EC2 = Elastic Compute Cloud
+
+Definition:
+EC2 ek AWS service hai jo tumhe virtual server (VM) provide karti hai cloud par.
+
+👉 Server = Virtual Machine = Instance
+
+---
+
+ 7️⃣ EC2 Architecture (Basic)
+
+EC2 Instance ke andar:
+
+→ Linux / Windows OS
+→ Web Server (Apache / Nginx / Tomcat)
+→ Application (Website / App / API)
+
+👉 Static website, backend app, database server sab EC2 par run ho sakta hai.
+
+---
+
+ 8️⃣ Instance Kya Hota Hai?
+
+Instance:
+AWS me jo virtual server create hota hai usse Instance bolte hain.
+
+👉 Physical server nahi
+👉 Fully virtual machine
+👉 Start / Stop / Resize anytime
+
+---
+
+ 9️⃣ AMI – Amazon Machine Image
+
+ 🔹 AMI Kya Hai?
+
+Definition:
+AMI ek template / image hoti hai jisme:
+
+→ Operating System
+→ Preinstalled software
+→ Configuration
+
+hotta hai.
+
+👉 Instance AMI se hi launch hota hai.
+
+---
+
+ 🔹 Example
+
+AMI:
+→ Amazon Linux
+→ Ubuntu
+→ Windows Server
+
+---
+
+ 🔟 Instance Type (Size of Server)
+
+Instance type batata hai:
+
+→ CPU
+→ Memory (RAM)
+→ Storage
+→ Network capacity
+
+ Example:
+
+`t2.micro` (Free Tier)
+`t3.medium`
+`m5d.xlarge`
+
+---
+
+ 1️⃣1️⃣ Instance Families (Performance Categories)
+
+AWS instance ko workload ke hisaab se classify karta hai:
+
+ 🔹 General Purpose
+
+Balanced CPU + RAM
+Example: M, T, A
+
+ 🔹 Compute Optimized
+
+High CPU performance
+Example: C
+
+ 🔹 Memory Optimized
+
+Large RAM
+Example: R, X, Z
+
+ 🔹 Storage Optimized
+
+High disk I/O
+Example: I, D, H1
+
+ 🔹 Accelerated Computing
+
+GPU / ML / AI
+Example: G, P, F
+
+---
+
+ 1️⃣2️⃣ Frontend vs Backend Servers
+
+ 🔹 Frontend (Web Server)
+
+→ HTML, CSS, JavaScript
+→ Static pages serve karta hai
+Example: Nginx, Apache
+
+---
+
+ 🔹 Backend (Application Server)
+
+→ Business logic
+→ Database connection
+→ API handling
+Example: Tomcat, Node.js, Python, Java
+
+---
+
+ 1️⃣3️⃣ Booting & Processing
+
+ 🔹 Booting
+
+Jab server start hota hai:
+
+→ Hardware load hota hai
+→ OS start hota hai
+→ Services run hoti hain
+
+👉 Is process ko Booting kehte hain.
+
+---
+
+ 🔹 Processing
+
+CPU ka kaam:
+
+→ Instructions execute karna
+→ Data process karna
+→ Output generate karna
+
+---
+
+ 1️⃣4️⃣ Summary (Exam / Interview Ready)
+
+→ Computing = Data processing using CPU, Memory, Storage
+→ Server = Service provide karne wala system
+→ Hypervisor = Ek machine par multiple VMs chalane wala software
+→ Cloud = Internet ke through servers rent par use karna
+→ EC2 = AWS ka virtual server service
+→ Instance = Virtual machine
+→ AMI = OS + software template
+→ Instance Type = Server ka size (CPU, RAM, Storage)
+→ Frontend = Web server
+→ Backend = Application server
 
