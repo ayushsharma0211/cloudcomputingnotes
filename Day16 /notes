@@ -1,1 +1,378 @@
 
+ ☁️ Cloud Journey – Day 16
+
+ Topic: HTML, HTTP/HTTPS, Web Server, EC2 Linux Web Server, SSH, Key Pair, SSL, URL
+
+---
+
+ 1️⃣ What is HTML
+
+→ HTML = HyperText Markup Language
+→ Website ka structure banata hai
+→ Browser ko batata hai kya show karna hai
+
+→ Example use in EC2
+HTML file (`index.html`) ko web server serve karta hai
+User browser me website dekhta hai
+
+---
+
+ 2️⃣ What is a Web Server
+
+→ Web server ek software hota hai jo HTML pages ko users tak deliver karta hai
+→ Request leta hai → Page bhejta hai
+
+→ Example
+Apache (httpd)
+Nginx
+
+→ EC2 me
+Tumne Linux EC2 instance par Apache Web Server install kiya
+Jo tumhari website internet par serve karta hai
+
+---
+
+ 3️⃣ HTTP and HTTPS
+
+→ HTTP = HyperText Transfer Protocol
+Website aur browser ke beech data transfer karta hai
+
+→ HTTPS = HTTP Secure
+Data encrypt hota hai
+Security zyada hoti hai
+
+→ EC2 me
+Jab tum apni site access karte ho:
+[http://public-ip](http://public-ip)
+ya
+[https://domain](https://domain)
+
+---
+
+ 4️⃣ What is URL (Uniform Resource Locator)
+
+→ URL ek web address hota hai jo resource ka location batata hai
+
+→ Example
+[http://3.110.25.10](http://3.110.25.10)
+[https://mywebsite.com](https://mywebsite.com)
+
+→ Parts of URL
+Protocol → http / https
+Domain / IP → server address
+Path → file ka location (index.html)
+
+---
+
+ 5️⃣ Admin and Root
+
+→ Root = Superuser (full permissions)
+→ Linux system ka administrator
+
+→ EC2 me
+Root user directly login disabled hota hai
+Isliye hum `ec2-user` se login karte hain
+Aur `sudo` use karke admin ka kaam karte hain
+
+---
+
+ 6️⃣ Remote Access to EC2 (Connection Concepts)
+
+→ EC2 server remote hota hai
+→ Usko access karne ke liye secure connection chahiye
+
+---
+
+ 🔑 Key Pair (Public Key and Private Key)
+
+→ Key pair = Security for login
+→ Public Key server me store hoti hai
+→ Private Key tumhare system me hoti hai
+
+→ Jab connect karte ho
+Private key verify hoti hai
+Agar match hui → login allowed
+
+→ Without key pair
+EC2 access possible nahi
+
+---
+
+ 7️⃣ SSH (Secure Shell)
+
+→ SSH = Secure Shell Protocol
+→ Secure tarike se server ko remotely control karne ka method
+
+→ EC2 me
+SSH se Linux server connect hota hai
+
+→ Example
+Browser nahi, terminal se server access
+Commands run karte ho
+Software install karte ho
+Website deploy karte ho
+
+---
+
+ 8️⃣ PuTTY (Windows Users)
+
+→ PuTTY ek SSH client hai
+→ Windows me Linux EC2 se connect hone ke liye use hota hai
+
+→ Steps concept
+Private key (.ppk file)
+→ PuTTY me load hoti hai
+→ Secure login ho jata hai
+
+---
+
+ 9️⃣ SSL Certificate
+
+→ SSL = Secure Sockets Layer
+→ Website ke liye security certificate
+
+→ Kya karta hai
+Data encrypt karta hai
+User aur server ke beech secure communication deta hai
+
+→ Result
+Website https:// se open hoti hai
+Browser me “Secure” dikhta hai
+
+---
+
+ 🔗 How All These Are Connected in AWS EC2
+
+→ Tumne Linux EC2 instance launch kiya
+→ Key Pair create ki for secure login
+→ SSH ke through server me login kiya
+→ Root/admin permissions se software install kiya
+→ Apache Web Server (httpd) install kiya
+→ HTML file banayi (`index.html`)
+→ Browser me URL (IP address) dala
+→ HTTP / HTTPS ke through website internet par live ho gayi
+→ Future me SSL certificate lagakar HTTPS enable kiya ja sakta hai
+
+---
+
+ 🔧 Create Linux Web Server on AWS EC2 (Concept Flow)
+
+→ EC2 launch (Amazon Linux)
+→ Key pair attach (for login)
+→ Security group allow HTTP (80) & SSH (22)
+→ SSH se server connect
+→ Apache install
+→ HTML file create
+→ Browser me website verify
+
+---
+
+ 🧾 10️⃣ HTML Simple Code
+
+```html
+<html>
+  <body>
+    <center>
+      <h1>I am a great person I Have Lunched EC2</h1>
+    </center>
+  </body>
+</html>
+```
+
+→ `<html>` → Document start
+→ `<body>` → Visible content
+→ `<h1>` → Heading text
+
+---
+
+ ⚙️ 11️⃣ Bash Script (User Data) – Line by Line Breakdown
+
+ 📌 Script:
+
+```bash
+!/bin/bash
+yum update -y
+yum install httpd -y
+echo " <html><body><center><h1>I am a great person I Have Lunched EC2</h1></center></body></html> " > /var/www/html/index.html
+systemctl start httpd
+systemctl enable httpd
+```
+
+---
+
+ 🔍 Line-by-Line Explanation
+
+→ `!/bin/bash`
+Tells system → Ye bash script hai
+
+→ `yum update -y`
+System ke packages update karta hai
+
+→ `yum install httpd -y`
+Apache Web Server install karta hai
+
+→ `echo "HTML code" > /var/www/html/index.html`
+HTML content ko website ke main page me likh deta hai
+`/var/www/html/` = Apache ka default web folder
+
+→ `systemctl start httpd`
+Web server start karta hai
+
+→ `systemctl enable httpd`
+Server reboot ke baad bhi Apache automatically start ho
+
+---
+
+ 🧠 Day 16 Summary
+
+→ HTML = Website structure
+→ Web Server = Pages serve karta hai
+→ HTTP/HTTPS = Data transfer protocol
+→ URL = Website address
+→ Root/Admin = Full system access
+→ Key Pair = Secure login
+→ SSH = Remote server access
+→ PuTTY = Windows SSH tool
+→ SSL = Website security
+→ Bash Script = Automation for web server setup
+→ EC2 = Cloud server jahan sab kuch run hota hai
+................................................................................................................................................................................................................
+
+
+
+ 📜 Bash Script Breakdown (Day 16)
+
+```bash
+!/bin/bash
+yum update -y
+yum install httpd -y
+echo " <html><body><center><h1>I am a great person I Have Lunched EC2</h1></center></body></html> " > /var/www/html/index.html
+systemctl start httpd
+systemctl enable httpd
+```
+
+---
+
+ 🔹 `!/bin/bash` → Shebang
+
+→ **Shebang** batata hai ki ye file **kaunse interpreter se run hogi**
+→ `/bin/bash` ka matlab hai **Bash shell** use karo
+→ System ko pata chalta hai ki ye **bash script** hai
+
+---
+
+ 🔹 `bin` → Binary Files
+
+→ `bin` ka matlab hota hai **binary executables ka folder**
+→ `/bin/bash` = Bash program ka location
+→ Linux me important commands (`ls`, `cp`, `mv`, `bash`) yahin hote hain
+
+---
+
+ 🔹 `yum` → Package Installer
+
+→ **YUM = Yellowdog Updater Modified**
+→ Amazon Linux / RHEL me software install, update, remove karne ka tool
+→ Internet se packages download karta hai
+
+---
+
+ 🔹 `yum update -y`
+
+→ System ke **saare installed packages update** karta hai
+→ `-y` ka matlab → automatic **Yes** (confirmation nahi maangta)
+
+👉 EC2 me use:
+Server ko latest security patches mil jaate hain
+
+---
+
+ 🔹 `yum install httpd -y`
+
+→ **httpd = Apache Web Server**
+→ Ye command Apache install karti hai
+→ `-y` → automatic yes
+
+👉 EC2 me use:
+Yehi software tumhari **website ko serve** karega
+
+---
+
+ 🔹 `httpd` → Apache Web Server
+
+→ `httpd` ka full form → **HTTP Daemon**
+→ Ye ek **web server software** hai
+→ Browser se request aati hai → httpd HTML page bhejta hai
+
+👉 Tumhari EC2 machine:
+Server ban jaati hai jo website host karti hai
+
+---
+
+ 🔹 `echo` → Print Command
+
+→ `echo` ka kaam hota hai **text print karna**
+→ Screen par ya kisi file me text likhna
+
+Example:
+
+```bash
+echo "Hello World"
+```
+
+---
+
+ 🔹 `> /var/www/html/index.html`
+
+→ `>` ka matlab → **output ko file me likhna**
+→ `/var/www/html/` = Apache ka **default web folder**
+→ `index.html` = Website ka main page
+
+👉 Is line ka matlab:
+HTML code ko **website ke home page** me daal diya
+
+---
+
+ 🔹 `systemctl` → Service Controller
+
+→ `systemctl` Linux me **services ko manage** karta hai
+→ Start, stop, restart, enable services
+
+---
+
+ 🔹 `systemctl start httpd`
+
+→ Apache web server ko **start karta hai**
+→ Ab website browser se access ho sakti hai
+
+---
+
+ 🔹 `systemctl enable httpd`
+
+→ Server reboot ke baad bhi **Apache automatically start ho**
+→ Permanent service bana deta hai
+
+---
+
+ 🔗 How This Script Works in AWS EC2 (Connected Flow)
+
+→ EC2 Linux instance start hota hai
+→ Ye bash script automatically run hoti hai (User Data)
+→ System update hota hai
+→ Apache install hota hai
+→ HTML file create hoti hai
+→ Apache start hota hai
+→ Website **public IP / URL** se live ho jaati hai
+
+---
+
+ 🧠 One-Line Summary
+
+→ **Shebang** = Script ka interpreter
+→ **bin** = Binary programs ka folder
+→ **yum** = Software installer
+→ **httpd** = Apache web server
+→ **echo** = Text print/write command
+→ **systemctl** = Service manager
+
+
