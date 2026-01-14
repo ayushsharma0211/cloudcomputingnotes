@@ -1,1 +1,161 @@
 
+
+ 📘 Day 17 – Amazon EBS (Elastic Block Store)
+
+ 1️⃣ What is EBS (Elastic Block Storage)
+
+Definition:
+Amazon EBS ek block-level persistent storage service hai jo EC2 instance ke saath attach hoti hai.
+
+→ Ye hard disk jaise kaam karta hai
+→ Data instance band hone ke baad bhi safe rehta hai
+→ OS, Database, Application files store karne ke liye use hota hai
+
+Simple words me:
+EBS = Cloud me hard disk
+
+---
+
+ 2️⃣ EC2 Storage Types
+
+ 🔹 1. EC2 Instance Store (Inbuilt Storage)
+
+→ Temporary / Ephemeral storage
+→ Instance stop ya terminate hote hi data delete
+→ Backup ke liye recommended nahi
+→ Use case: cache, temp files, swap memory
+
+Example:
+Temporary files jo reboot ke baad chahiye hi nahi
+
+---
+
+ 🔹 2. Amazon EBS (Elastic Block Store)
+
+→ Persistent storage
+→ Instance stop/terminate ke baad bhi data safe
+→ Snapshot le sakte ho
+→ Resize kar sakte ho
+→ Attach/Detach possible
+
+Example:
+→ OS files
+→ Database
+→ Application data
+
+---
+
+ 3️⃣ What is Nitro System
+
+Definition:
+AWS Nitro System ek modern virtualization platform hai jo EC2 ko fast, secure aur scalable banata hai.
+
+Nitro kya karta hai:
+
+→ Hypervisor ko lightweight banata hai
+→ Hardware offloading karta hai (network, storage, security)
+→ Performance better hoti hai
+→ Customer ka data AWS se isolate rehta hai
+→ Bare-metal jaisi speed milti hai
+
+Simple language:
+Nitro = EC2 ke liye high-performance engine
+
+---
+
+ 4️⃣ Amazon EBS Volume
+
+EBS Volume = Virtual Hard Disk
+
+→ EC2 instance ke saath attach hoti hai
+→ Ek time me ek instance se attach hoti hai (mostly)
+→ AZ specific hoti hai
+→ Snapshot ke through backup le sakte ho
+
+---
+
+ 5️⃣ EBS Volume Types
+
+ 🟢 SSD Based Volumes (High Performance)
+
+Use case: OS, Database, Applications
+
+→ gp2 / gp3 – General Purpose
+Balanced cost + performance
+→ io1 / io2 – Provisioned IOPS
+High performance databases ke liye
+→ io2 Block Express
+Mission-critical workloads
+
+---
+
+ 🔵 HDD Based Volumes (Throughput Optimized)
+
+Use case: Large data, backup, logs
+
+→ st1 – Throughput Optimized HDD
+→ sc1 – Cold HDD (low cost, archival type data)
+
+---
+
+ 6️⃣ EBS Volume vs Instance Store
+
+| Feature         | Instance Store | EBS                  |
+| --------------- | -------------- | -------------------- |
+| Persistence     | ❌ Temporary    | ✅ Permanent          |
+| Backup          | ❌ No Snapshot  | ✅ Snapshot available |
+| Use case        | Cache, temp    | OS, DB, App          |
+| Data after stop | ❌ Lost         | ✅ Safe               |
+
+---
+
+ 7️⃣ Live Practice – EBS Volume Attach
+
+Steps:
+
+→ EC2 instance launch karo
+→ EC2 Dashboard me jao → Volumes
+→ New EBS Volume create karo (AZ same honi chahiye)
+→ Volume select karo → Attach Volume → EC2 choose karo
+→ Instance ke andar mount karo
+→ Storage ready for use
+
+Real life meaning:
+Jaise computer me external hard disk connect karte ho
+
+---
+
+ 8️⃣ Create Snapshot (Backup)
+
+Snapshot = Backup of EBS Volume
+
+→ Volume select karo
+→ Create Snapshot option
+→ Snapshot S3 me store hota hai (internally managed by AWS)
+→ Snapshot se new volume create kar sakte ho
+
+Use case:
+→ Data recovery
+→ Disaster recovery
+→ New server setup with same data
+
+---
+
+ 9️⃣ Real-Life Example
+
+Laptop Example:
+→ Hard disk = EBS
+→ Pen drive = Instance Store (temporary)
+→ Backup drive = Snapshot
+
+---
+
+ 🔑 Key Learnings – Day 17
+
+→ EBS ek persistent block storage hai
+→ EC2 Instance Store temporary hota hai
+→ Nitro System EC2 ko secure, fast aur scalable banata hai
+→ EBS volume types workload ke according choose karte hain
+→ Snapshot se backup aur recovery possible hai
+
+
