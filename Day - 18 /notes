@@ -1,1 +1,144 @@
+ 📘 Day 18 – Networking Fundamentals (Cloud Perspective)
+
+ 1️⃣ What is Networking
+
+→ Networking ka matlab hota hai multiple devices ko connect karna taaki wo data share kar saken
+→ Devices ho sakte hain computers, servers, mobiles, routers, switches
+
+→ Simple example
+Laptop → Router → Internet → Server
+
+→ Cloud me networking ka role
+User aur cloud resources (EC2, S3, DB) ke beech communication enable karta hai
+
+---
+
+ 2️⃣ How Network Works (Basic Flow)
+
+→ Sender device data ko packets me todta hai
+→ Packets network ke through travel karte hain
+→ Router aur switches packets ko forward karte hain
+→ Receiver device packets ko reassemble karta hai
+
+→ Cloud example
+User browser → Internet → AWS Network → EC2 Server → Response back to user
+
+---
+
+ 3️⃣ History of Internet (Short & Simple)
+
+→ 1960s → ARPANET (US Defense project)
+→ Purpose → Reliable communication during failures
+→ 1980s → TCP/IP standard bana
+→ 1990s → World Wide Web (WWW) aaya
+→ 2000s → Internet commercial hua
+→ Present → Cloud computing, streaming, AI, IoT
+
+→ Cloud ka base
+Internet hi cloud services ka backbone hai
+
+---
+
+ 4️⃣ Why Networking is Important
+
+→ Data sharing possible hoti hai
+→ Remote access milta hai
+→ Cloud services globally accessible hoti hain
+→ Security policies apply hoti hain
+→ Scalability aur performance improve hoti hai
+
+→ Cloud me
+Without networking → EC2, S3, databases access nahi ho sakte
+
+---
+
+ 5️⃣ Types of Network
+
+---
+
+ 🔹 LAN (Local Area Network)
+
+→ Small area me devices connect karta hai
+→ Office, home, lab network
+
+→ Example
+Office ke computers ek router se connected
+
+→ Cloud relation
+Private network jaisa concept VPC ke andar use hota hai
+
+---
+
+ 🔹 WAN (Wide Area Network)
+
+→ Large geographical area cover karta hai
+→ Cities, countries, continents
+
+→ Example
+Internet
+
+→ Cloud relation
+AWS regions aur users WAN ke through connect hote hain
+
+---
+
+ 🔹 MAN (Metropolitan Area Network)
+
+→ City-level network
+→ LAN se bada, WAN se chhota
+
+→ Example
+City-wide ISP network
+
+→ Cloud relation
+Regional connectivity ke liye useful
+
+---
+
+ 🔹 PAN (Personal Area Network)
+
+→ Very small range
+→ Personal devices ke beech
+
+→ Example
+Mobile → Bluetooth → Earbuds
+
+→ Cloud relation
+End-user devices jo cloud services access karte hain
+
+---
+
+ 6️⃣ Networking in Cloud (High-Level View)
+
+→ Cloud provider apna global network maintain karta hai
+→ Users internet ke through cloud se connect hote hain
+→ Virtual networks (VPC) banaye jaate hain
+→ Subnets, routing, security rules apply hote hain
+
+→ Result
+Secure, scalable, highly available communication
+
+---
+
+ 7️⃣ Real-Life Example (Cloud Context)
+
+→ User opens website
+→ Request goes through LAN → ISP → WAN (Internet)
+→ Reaches AWS data center
+→ Routed to EC2 instance
+→ Response travels back same path
+
+---
+
+ 🔑 Key Learnings – Day 18
+
+→ Networking = Device communication
+→ Internet = Backbone of cloud computing
+→ Data packets ke form me travel karta hai
+→ Networking cloud access aur security dono ke liye critical hai
+→ LAN, WAN, MAN, PAN different scale ke networks hain
+
+---
+
+
 
