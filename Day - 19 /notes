@@ -1,1 +1,261 @@
+ 📘 Day 19 – Networking Fundamentals (Cloud Perspective)
 
+ 1️⃣ What is Networking?
+
+Networking ka matlab hota hai multiple devices ko connect karna taaki wo data share kar sakein.
+
+→ Example: Mobile, laptop, server, printer ek network me connected
+→ Cloud me: EC2, RDS, Load Balancer, Internet sab networking ke through baat karte hain
+
+---
+
+ 2️⃣ Why Networking is Important (Especially in Cloud)
+
+→ Data transfer ke bina cloud ka koi use nahi
+→ EC2 ko internet se connect karna
+→ User ka request server tak pahunchana
+→ Security (private/public access control)
+→ High availability & scalability
+
+Cloud = Compute + Storage + Networking
+
+---
+
+ 3️⃣ History of Internet (Short & Clear)
+
+→ Pehle ARPANET (military & research)
+→ Phir TCP/IP protocols aaye
+→ WWW (World Wide Web)
+→ Aaj: Cloud, Streaming, Gaming, IoT
+
+---
+
+ 4️⃣ Types of Networks
+
+ LAN (Local Area Network)
+
+→ Small area (office, home)
+→ High speed
+→ Example: Wi-Fi at home
+
+ WAN (Wide Area Network)
+
+→ Large distance
+→ Example: Internet
+
+ MAN (Metropolitan Area Network)
+
+→ City level network
+
+ PAN (Personal Area Network)
+
+→ Very short range
+→ Example: Bluetooth, hotspot
+
+---
+
+ 5️⃣ What is an IP Address?
+
+IP address ek unique identity hoti hai jo network me device ko identify karti hai.
+
+→ Example: `192.168.1.10`
+→ IP = Home
+→ Port = Room inside home
+
+---
+
+ 6️⃣ IPv4 vs IPv6
+
+ IPv4
+
+→ 32-bit address
+→ 4 octets (each 8 bits)
+→ Example: `192.168.1.10`
+→ Total bits = 32
+
+ IPv6
+
+→ 128-bit address
+→ Example: `2001:db8::1`
+→ Zyada IP addresses available
+→ Future ready
+
+---
+
+ 7️⃣ Private IP vs Public IP
+
+ Private IP
+
+→ Internal network ke liye
+→ Internet se direct access nahi
+→ Example: `192.168.x.x`
+
+ Public IP
+
+→ Internet pe reachable
+→ ISP provide karta hai
+→ AWS EC2 me public IP se website open hoti hai
+
+---
+
+ 8️⃣ MAC Address
+
+→ Hardware (NIC) ka physical address
+→ Fixed hota hai
+→ Layer 2 (Data Link Layer) pe kaam karta hai
+→ IP change ho sakta hai, MAC nahi
+
+---
+
+ 9️⃣ OSI Model (7 Layers)
+
+1. Physical
+2. Data Link
+3. Network
+4. Transport
+5. Session
+6. Presentation
+7. Application
+
+→ Interview favorite topic
+→ Troubleshooting me use hota hai
+
+---
+
+ 🔟 TCP/IP Model
+
+Simplified version of OSI
+
+→ Application
+→ Transport
+→ Internet
+→ Network Access
+
+---
+
+ 1️⃣1️⃣ Protocols (Common & Important)
+
+→ TCP – Reliable data (web, email)
+→ UDP – Fast data (video, gaming)
+→ HTTP – Website
+→ HTTPS – Secure website
+→ FTP – File transfer
+→ DNS – Domain name → IP convert
+
+---
+
+ 1️⃣2️⃣ Ports (Very Important)
+
+→ HTTP → 80
+→ HTTPS → 443
+→ SSH → 22
+→ FTP → 21
+
+Concept:
+IP = House
+Port = Room inside the house
+
+---
+
+ 1️⃣3️⃣ Subnet Mask
+
+Subnet mask batata hai:
+→ Network part kaunsa hai
+→ Host part kaunsa hai
+
+Example:
+IP: `192.168.1.10`
+Subnet Mask: `255.255.255.0`
+
+---
+
+ 1️⃣4️⃣ CIDR Notation
+
+CIDR = Classless Inter-Domain Routing
+
+Example:
+`192.168.1.0/24`
+
+→ `/24` = Network bits
+→ AWS me VPC, Subnet CIDR bahut important
+
+---
+
+ 1️⃣5️⃣ Subnetting
+
+Subnetting ka matlab:
+→ Ek large network ko chhote networks me todna
+
+Benefits:
+→ Better management
+→ Security
+→ Efficient IP usage
+
+AWS me:
+→ VPC → Subnets → AZs
+
+---
+
+ 1️⃣6️⃣ IP Classes (Basics)
+
+→ Class A → Large networks
+→ Class B → Medium
+→ Class C → Small
+→ Class D → Multicast
+
+(Note: Cloud me mostly CIDR use hota hai, class based kam)
+
+---
+
+ 🔗 How This Connects to AWS
+
+→ VPC CIDR
+→ Subnets (public/private)
+→ EC2 private & public IP
+→ Security Groups (ports)
+→ Load Balancer
+→ Internet Gateway
+
+---
+
+ ✅ Day 19 Summary
+
+Today’s learning built a strong networking foundation, which is critical for:
+→ AWS VPC
+→ EC2 connectivity
+→ Security
+→ Real-world cloud architecture
+
+
+OSI Model network communication ko 7 layers me divide karta hai, taaki samajhna aur troubleshoot karna easy ho. Simple words me 👇
+
+1. Physical Layer
+Wire, cable, signals ka kaam. Data bits (0/1) me travel karta hai.
+👉 Example: Ethernet cable, voltage signals
+
+2. Data Link Layer
+Direct device-to-device communication. Error check + MAC address use hota hai.
+👉 Example: Switch, MAC address
+
+3. Network Layer
+Data ko route karta hai source se destination tak.
+👉 Example: IP address, Router
+
+4. Transport Layer
+Data ko chunks (segments) me todta hai, reliable delivery ensure karta hai.
+👉 Example: TCP (reliable), UDP (fast)
+
+5. Session Layer
+Sender aur receiver ke beech session start, maintain aur close karta hai.
+👉 Example: Login session
+
+6. Presentation Layer
+Data ka format samajhne layak banata hai (encrypt, compress, translate).
+👉 Example: Encryption, JPEG/MP3 format
+
+7. Application Layer
+User ke bilkul closest layer. Yahin se user network use karta hai.
+👉 Example: Browser, Email, HTTP, FTP
+
+📌 Yaad rakhne ka trick:
+Please Do Not Throw Sausage Pizza Away 😄
