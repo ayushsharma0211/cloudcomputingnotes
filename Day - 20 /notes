@@ -1,1 +1,249 @@
+ 📘 Day – 20
+
+ 🌐 Networking in AWS (Beginner to Cloud Level)
+
+---
+
+ 🔰 Introduction
+
+Networking in AWS ka matlab hota hai AWS ke andar resources (EC2, Subnet, VPC, Internet) kaise aapas me aur bahar ki duniya se baat karte hain.
+Isme hum NIC, Switch, Router, Firewall, ENI, Routing Table, VPC jaise concepts use karte hain.
+
+---
+
+ 1️⃣ NIC (Network Interface Card)
+
+ 🔹 What is NIC?
+
+NIC ek network card hota hai jo kisi machine ko network se connect karta hai.
+
+📌 Real Life Example:
+Mobile ka SIM card 📱
+SIM nahi → network nahi
+
+ 🔹 NIC Portable hoti hai
+
+ NIC ko ek machine se detach karke dusri machine me attach kiya ja sakta hai
+ AWS me isi concept ko ENI (Elastic Network Interface) kehte hain
+
+---
+
+ 2️⃣ Network Switch
+
+ 🔹 What is Network Switch?
+
+Network switch ka kaam hota hai:
+
+ Multiple devices ko same network ke andar connect karna
+ Data sirf correct device tak bhejna
+
+📌 Use case:
+Office / Data Center / Cloud network
+
+ 🔹 Large Network me Role
+
+ Large networks ko efficiently manage karta hai
+ Fast & intelligent hota hai
+ MAC address ke basis par kaam karta hai
+
+---
+
+ 3️⃣ Hub vs Switch
+
+| Hub                   | Switch                |
+| --------------------- | --------------------- |
+| Data sabko bhejta hai | Sirf target device ko |
+| Slow                  | Fast                  |
+| Intelligent nahi      | Intelligent           |
+| Old technology        | Modern technology     |
+
+📌 AWS me Hub use nahi hota
+AWS internally virtual switches use karta hai
+
+---
+
+ 4️⃣ Network Switch (In Detail – AWS Perspective)
+
+ AWS me switch directly visible nahi hota
+ AWS automatically networking handle karta hai
+ Same subnet ke andar communication switch ke through hota hai
+
+📌 Conclusion:
+Tum AWS me switch configure nahi karte, AWS khud manage karta hai
+
+---
+
+ 5️⃣ Router
+
+ 🔹 What is Router?
+
+Router ka kaam hota hai:
+
+ Different networks ko connect karna
+ Traffic ko correct path pe bhejna
+
+📌 Real Life Example:
+Road junction / Highway 🛣️
+
+ 🔹 AWS me Router
+
+ VPC ke andar built-in router hota hai
+ Ye Route Table ke rules follow karta hai
+
+---
+
+ 6️⃣ Firewall
+
+Firewall ka kaam hota hai network security provide karna.
+
+ 🔐 AWS me Firewall Types
+
+ 🔹 Security Group
+
+ EC2 level firewall
+ Stateful
+ Sirf allow rules
+
+ 🔹 Network ACL (NACL)
+
+ Subnet level firewall
+ Stateless
+ Allow + Deny rules
+
+ 🔹 WAF
+
+ Web Application Firewall
+ SQL Injection, XSS attacks se protection
+
+---
+
+ 7️⃣ How Networking Works in AWS (Flow)
+
+ 🌐 Internet → EC2
+
+```
+Internet
+ → Internet Gateway (IGW)
+ → Route Table
+ → Subnet
+ → Network ACL
+ → Security Group
+ → ENI
+ → EC2
+```
+
+ 🖥️ EC2 → Internet
+
+```
+EC2
+ → ENI
+ → Security Group
+ → Route Table
+ → Internet Gateway
+ → Internet
+```
+
+---
+
+ 8️⃣ Elastic Network Interface (ENI)
+
+ 🔹 What is ENI?
+
+ENI = AWS ka virtual NIC
+
+ 🔹 ENI ke Components
+
+ Private IP
+ Public IP (optional)
+ MAC Address
+ Security Group
+
+ 🔥 Important Point
+
+> ENI portable hoti hai
+> Ek EC2 se detach karke dusri EC2 me attach kar sakte ho
+
+📌 Use Case:
+Failover, troubleshooting, high availability
+
+---
+
+ 9️⃣ Routing Table
+
+ 🔹 What is Routing Table?
+
+Routing table decide karti hai:
+
+> Network traffic kahan jayega
+
+ 🔹 Example Routes
+
+ `10.0.0.0/16 → local`
+ `0.0.0.0/0 → IGW`
+
+📌 Important:
+
+ Har Subnet ke saath ek routing table attached hoti hai
+
+---
+
+ 🔟 VPC (Virtual Private Cloud)
+
+ 🔹 What is VPC?
+
+VPC = AWS ka private network
+
+Tum control karte ho:
+
+ IP range (CIDR)
+ Subnets
+ Route tables
+ Security
+
+📌 Real Life Example:
+Gated colony 🏘️
+
+---
+
+ 1️⃣1️⃣ Amazon VPC (Big Architecture)
+
+ 🔹 Structure
+
+```
+AWS
+ → Region
+    → VPC
+       → Availability Zone
+          → Subnet
+             → EC2
+```
+
+ 🔹 Key Points
+
+ VPC = Region specific
+ Subnet = AZ specific
+ Public Subnet = Internet access
+ Private Subnet = No direct internet
+
+---
+
+ 🔥 Final Summary (Quick Revision)
+
+ NIC = Network card
+ ENI = AWS NIC
+ Switch = Same network communication
+ Router = Different network connection
+ Firewall = Security
+ Routing Table = Traffic direction
+ VPC = Private AWS network
+
+---
+
+ ✅ Learner Notes
+
+ AWS networking mostly logical & managed
+ Physical devices AWS khud handle karta hai
+ User ka focus = design + security + routing
+
+
 
