@@ -1,1 +1,148 @@
 
+ 📘 Day 21 – IoT, VPC Fundamentals & AWS VPC Practical
+
+---
+
+ 1️⃣ IoT Concept (Internet of Things)
+
+ What is IoT
+
+→ IoT ka matlab hota hai physical devices ko internet se connect karna
+→ Devices data collect karte hain, send karte hain aur receive karte hain
+
+ Examples
+
+→ Smart watch
+→ Smart TV
+→ Smart lights
+→ Sensors (temperature, motion)
+
+ How IoT Works
+
+→ Device (sensor) data collect karta hai
+→ Internet ke through cloud tak data jata hai
+→ Cloud data process karta hai
+→ Response wapas device ko milta hai
+
+ Cloud Connection
+
+→ IoT devices mostly cloud platforms se connected hote hain
+→ AWS IoT services use hoti hain data processing aur storage ke liye
+
+---
+
+ 2️⃣ What is VPC (Virtual Private Cloud)
+
+ VPC Definition
+
+→ VPC ek private virtual network hota hai AWS cloud ke andar
+→ Tum apna isolated network create kar sakte ho
+→ IP range, subnets, routing tum control karte ho
+
+ Simple Example
+
+→ VPC = Tumhara private office building
+→ Subnets = Different floors / rooms
+
+---
+
+ 3️⃣ Why VPC is Important
+
+→ Security aur isolation milta hai
+→ Private aur public resources alag rakh sakte ho
+→ Networking control milta hai
+→ Cloud architecture design possible hoti hai
+
+---
+
+ 4️⃣ VPC Components (Concept)
+
+→ CIDR block (IP range)
+→ Subnets
+→ Route tables
+→ Internet Gateway
+→ Security Groups
+→ Network ACL
+
+---
+
+ 5️⃣ Subnet Concept
+
+ What is Subnet
+
+→ Subnet VPC ka chhota part hota hai
+→ CIDR block ke through define hota hai
+
+ Types of Subnets
+
+→ Public Subnet
+→ Private Subnet
+
+ Public Subnet
+
+→ Internet access allowed
+→ Internet Gateway attached
+→ EC2 public IP ke saath
+
+ Private Subnet
+
+→ Direct internet access nahi
+→ Database jaise resources ke liye use hota hai
+
+---
+
+ 6️⃣ AWS VPC Practical (High-Level Steps)
+
+→ VPC create ki with CIDR block
+→ Subnets create ki (public & private)
+→ Internet Gateway attach ki
+→ Route table configure ki
+→ EC2 instance launch ki VPC ke andar
+→ Public subnet me EC2 ko internet access mila
+
+---
+
+ 7️⃣ CyberArk (Cyber Arc)
+
+ What is CyberArk
+
+→ CyberArk ek Privileged Access Management (PAM) tool hai
+→ Sensitive accounts ko secure karta hai
+
+ Why CyberArk is Used
+
+→ Root / Admin account protection
+→ Password vaulting
+→ Secure access control
+→ Audit aur compliance
+
+ Cloud Relevance
+
+→ Cloud environments me admin access secure karne ke liye
+→ AWS root aur IAM privileged access protection
+
+---
+
+ 🔗 How All Concepts Connect
+
+→ IoT devices data bhejte hain cloud ko
+→ Cloud networking VPC ke through secure hoti hai
+→ Subnets resources ko logically divide karti hain
+→ CyberArk privileged access ko secure karta hai
+
+---
+
+ ✅ Day 21 Summary
+
+→ IoT connects physical devices to cloud
+→ VPC AWS ka private network hai
+→ Subnets VPC ko organize karti hain
+→ AWS VPC practical se networking clear hoti hai
+→ CyberArk privileged access ko secure karta hai
+
+---
+
+
+
+
+
