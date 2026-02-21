@@ -1,0 +1,202 @@
+📘 Day 25 – Identity & Access Management (IAM) and CloudTrail
+
+1️⃣ What is IAM (Identity and Access Management)?
+
+IAM AWS ka security service hai jo decide karta hai:
+
+→ Kaun (WHO) AWS access kar sakta hai
+→ Kya (WHAT) access kar sakta hai
+→ Kaise (HOW) access kar sakta hai
+
+Simple words me:
+IAM = Login + Permission control system
+
+---
+
+ 2️⃣ IAM ke Two Core Components
+
+ 🔐 Authentication (Who are you?)
+
+Authentication ka matlab hota hai identity verify karna.
+
+AWS me authentication hoti hai:
+→ Username & Password
+→ MFA (Multi-Factor Authentication)
+→ Access Key & Secret Key
+→ Role-based authentication
+
+📌 Example:
+Aap AWS login page par username + password daalte ho → authentication
+
+---
+
+ 🛂 Authorization (What are you allowed to do?)
+
+Authorization ka matlab hota hai permissions check karna.
+
+AWS check karta hai:
+→ EC2 start kar sakte ho ya nahi
+→ S3 bucket access allowed hai ya nahi
+
+📌 Example:
+Login ho gaye ho, par EC2 delete ka access nahi hai → authorization
+
+---
+
+ 3️⃣ Authentication vs Authorization (Interview Favorite)
+
+| Authentication          | Authorization     |
+| ----------------------- | ----------------- |
+| Identity verify         | Permission verify |
+| Pehle hota hai          | Baad me hota hai  |
+| Login related           | Action related    |
+| Username, password, MFA | IAM Policy        |
+
+---
+
+ 4️⃣ IAM in AWS Terms
+
+→ Authentication = IAM User / Role / MFA / Access Keys
+→ Authorization = IAM Policies (JSON permissions)
+
+AWS flow:
+Login → Authentication → Authorization → Action Allowed / Denied
+
+---
+
+ 5️⃣ IAM User kya hota hai?
+
+IAM User ek individual identity hoti hai AWS me.
+
+→ Real person (developer, admin)
+→ Program (application, script)
+
+IAM User ke paas ho sakta hai:
+→ Console access
+→ Programmatic access (CLI / SDK)
+→ Policies (permissions)
+
+📌 Industry example:
+Company me 10 developers → 10 IAM users (same permissions group ke through)
+
+---
+
+ 6️⃣ Business Requirements in IT (IAM ka real use)
+
+Real IT companies me:
+→ Har user ko full access nahi dete
+→ Role-based access hota hai
+
+Structure:
+→ User → Individual person
+→ Group → Same role wale users (Dev, QA, Admin)
+→ Permission (Policy) → Kya allowed hai
+
+📌 Example:
+Developers group → EC2 read/write
+Finance group → Billing access
+Admin group → Full access
+
+---
+
+ 7️⃣ AWS me Login karne ke Multiple Ways
+
+AWS access karne ke 3 main tareeke:
+
+ 1️⃣ AWS Management Console
+
+→ Web browser
+→ Username + Password + MFA
+→ Mostly human users ke liye
+
+ 2️⃣ AWS CLI (Command Line Interface)
+
+→ Access Key + Secret Access Key
+→ Terminal se AWS resources manage
+→ Automation ke liye best
+
+ 3️⃣ AWS Tools & SDKs
+
+→ Applications ke liye
+→ Java, Python, Node.js SDK
+→ Programmatic access
+
+---
+
+ 8️⃣ Access Key & Secret Key kya hote hain?
+
+→ Ye programmatic credentials hote hain
+→ CLI / SDK use karte time lagte hain
+→ Password ki tarah hota hai (but code ke liye)
+
+⚠️ Security tip:
+→ Kabhi GitHub par upload mat karna
+→ Rotate regularly
+
+---
+
+ 9️⃣ What is AWS CloudTrail?
+
+CloudTrail AWS ka logging & auditing service hai.
+
+CloudTrail record karta hai:
+→ Kaun user
+→ Kab
+→ Kya action
+→ Kis service par
+→ Kis IP se
+
+📌 Simple words me:
+CloudTrail = AWS ka CCTV camera 🎥
+
+---
+
+ 🔟 CloudTrail kya record karta hai?
+
+→ Console activity
+→ CLI commands
+→ API calls
+→ SDK requests
+
+Example:
+→ EC2 terminate kisne kiya
+→ S3 bucket delete kab hua
+
+---
+
+ 1️⃣1️⃣ CloudTrail ka Real-World / Industry Use
+
+→ Security audit
+→ Compliance (ISO, SOC, PCI)
+→ Incident investigation
+→ Unauthorized activity detection
+
+📌 Example:
+Agar EC2 delete ho gaya → CloudTrail se pata chalega kis user ne kiya
+
+---
+
+ 1️⃣2️⃣ IAM + CloudTrail Together
+
+IAM decides:
+→ Who can do what
+
+CloudTrail records:
+→ Who did what
+
+Security ka complete picture banta hai.
+
+---
+
+ ✅ Day 25 Summary
+
+→ IAM controls access & permissions
+→ Authentication = identity check
+→ Authorization = permission check
+→ IAM users, groups & policies business requirement ke hisaab se use hote hain
+→ CloudTrail AWS activity ka full audit log maintain karta hai
+
+Ye foundation AWS Security + DevOps + Cloud Engineer role ke liye mandatory hai 🚀
+
+---
+
