@@ -1,0 +1,223 @@
+📘 Day 24 – Security in Cloud (AWS Perspective)
+
+1️⃣ What is Cloud Security?
+
+Cloud security ka matlab hota hai:
+→ Data
+→ Applications
+→ Infrastructure
+→ Access
+
+ko unauthorized access, attacks, data loss se protect karna.
+
+👉 Cloud me security sirf AWS ka kaam nahi hota, customer ka bhi hota hai.
+
+---
+
+ 2️⃣ Shared Responsibility Model (Most Important Concept)
+
+AWS cloud security Shared Responsibility Model follow karta hai.
+
+👉 Simple rule:
+
+> AWS = Security “OF” the Cloud
+> Customer = Security “IN” the Cloud
+
+---
+
+ 3️⃣ Real-World Example (Building / Society Example)
+
+ 🏢 Building Management (AWS Responsibility)
+
+→ Gate
+→ CCTV camera
+→ Lift
+→ Fire safety
+→ Building structure
+
+AWS bhi same kaam karta hai 👇
+
+→ Data center security
+→ Physical servers
+→ Network cables
+→ Power, cooling
+→ Hardware protection
+
+---
+
+ 🧑 Flat Owner / Tenant (Customer Responsibility)
+
+→ Flat ka lock
+→ Keys sambhalna
+→ Door band rakhna
+→ Apna data safe rakhna
+
+Customer ke cloud responsibilities 👇
+
+→ OS configuration
+→ Firewall rules
+→ IAM users & permissions
+→ Data encryption
+→ Application security
+
+---
+
+ 4️⃣ AWS Responsibility – Security OF the Cloud
+
+AWS in cheezon ka 100% responsible hota hai:
+
+→ Physical data centers
+→ Hardware (servers, storage, networking)
+→ Region, Availability Zone, Edge locations
+→ Underlying cloud infrastructure
+→ Managed services ka base layer
+
+📌 Example:
+→ EC2 server physically kaha rakha hai
+→ Disk ka hardware failure
+→ Data center me fire, flood, power backup
+
+👉 Customer ko ye sab dekhna hi nahi padta
+
+---
+
+ 5️⃣ Customer Responsibility – Security IN the Cloud
+
+Customer ko in cheezon ka dhyaan rakhna hota hai:
+
+→ EC2 OS (Linux/Windows) hardening
+→ Security Groups (firewall rules)
+→ IAM users, roles, policies
+→ Application security
+→ Database passwords
+→ Data encryption
+→ Backup & monitoring
+
+📌 Example:
+→ Port 22 open karna ya band rakhna
+→ Strong password use karna
+→ Root user ka misuse na ho
+→ Public bucket accidentally na ban jaaye
+
+---
+
+ 6️⃣ Service Type ke According Responsibility
+
+ 🖥️ IaaS (EC2, EBS, VPC)
+
+AWS:
+→ Physical infra
+→ Hypervisor
+
+Customer:
+→ OS
+→ Firewall
+→ Patching
+→ App security
+
+---
+
+ 🛠️ PaaS (RDS, Lambda)
+
+AWS:
+→ OS
+→ Database engine
+→ Infrastructure
+
+Customer:
+→ DB access
+→ Query security
+→ IAM permissions
+
+---
+
+ ☁️ SaaS (Gmail, Office 365)
+
+AWS / Provider:
+→ Almost everything
+
+Customer:
+→ User access
+→ Passwords
+→ Data usage
+
+---
+
+ 7️⃣ IAM (Identity and Access Management)
+
+IAM = Who can do what in AWS
+
+→ User: Person
+→ Role: Service / temporary access
+→ Policy: Permission rules
+
+📌 Real-world:
+→ Office ID card system
+→ Kis employee ko kaunsa access milega
+
+AWS Example:
+→ EC2 ko S3 access dena (IAM Role)
+→ Developer ko sirf read access dena
+
+---
+
+ 8️⃣ API Security
+
+API = Application Programming Interface
+→ AWS services APIs ke through communicate karti hain
+
+Security points:
+→ IAM authentication
+→ HTTPS mandatory
+→ Access keys protect karna
+
+📌 Example:
+→ AWS CLI
+→ SDK calls
+→ Terraform
+
+---
+
+ 9️⃣ Monolithic vs Microservices (Security Angle)
+
+ Monolithic App
+
+→ Ek hi big application
+→ Ek issue = poori app down
+→ Security risk zyada
+
+ Microservices
+
+→ Small independent services
+→ Limited blast radius
+→ Better isolation
+→ Easy to secure
+
+AWS Example:
+→ ALB + multiple EC2 / Lambda services
+
+---
+
+ 🔐 Security Golden Rules (Interview Ready)
+
+→ Never use root user daily work ke liye
+→ Always follow least privilege
+→ Encrypt data at rest & in transit
+→ Close unused ports
+→ Enable logging (CloudTrail, CloudWatch)
+→ Backup is also security
+
+---
+
+ ✅ Day 24 Summary
+
+→ Cloud security is a shared responsibility
+→ AWS secures the cloud infrastructure
+→ Customer secures data, access, and applications
+→ IAM is the backbone of AWS security
+→ Misconfiguration = biggest security risk
+
+📌 Most important line (Interview):
+
+> AWS is responsible for security OF the cloud,
+> Customer is responsible for security IN the cloud.
