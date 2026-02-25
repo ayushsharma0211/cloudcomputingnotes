@@ -1,0 +1,213 @@
+
+
+ 1️⃣ What is an IAM Policy?
+
+IAM Policy ek JSON document hota hai jo define karta hai:
+
+→ Who (user / group / role)
+→ Can do what (actions like `s3:GetObject`)
+→ On which resource (S3 bucket, EC2, etc.)
+→ Under what condition
+
+👉 Simple words me:
+Policy = Rule book of permissions
+
+---
+
+ 2️⃣ Types of Policies in AWS
+
+AWS me mainly 2 broad categories hoti hain:
+
+ ➤ IAM Policies
+
+ ➤ Resource Policies
+
+---
+
+ 3️⃣ IAM Policies (Most Common)
+
+IAM Policies directly IAM identities par lagti hain:
+
+→ User
+→ Group
+→ Role
+
+IAM Policies ke 2 types hote hain 👇
+
+---
+
+ 4️⃣ Inline Policies
+
+ 🔹 What is Inline Policy?
+
+→ Policy jo directly ek IAM entity (user / role / group) ke andar embedded hoti hai
+→ One-to-One relationship maintain karti hai
+→ Reusable ❌
+→ Versioning ❌
+
+ 🔹 Important Point
+
+Agar IAM user delete ho gaya →
+👉 Inline policy automatically delete ho jaati hai
+
+ 🔹 Real-World Example
+
+Suppose:
+→ Ek temporary employee hai
+→ Sirf ek hi EC2 instance ka access dena hai
+→ Future me reuse nahi karna
+
+👉 Best choice: Inline Policy
+
+ 🔹 When to Use Inline Policy?
+
+→ Very specific permission
+→ Short-term requirement
+→ Tight control needed
+
+---
+
+ 5️⃣ Managed Policies
+
+ 🔹 What is Managed Policy?
+
+→ Standalone policy hoti hai
+→ Multiple users, groups, roles par attach ho sakti hai
+→ Reusable ✅
+→ Versioning supported ✅
+
+👉 Ye production environment me most recommended hoti hai
+
+---
+
+ 6️⃣ Types of Managed Policies
+
+ 1️⃣ AWS Managed Policies
+
+→ AWS khud create aur manage karta hai
+→ Common use cases ke liye ready-made
+
+Examples:
+→ `AmazonS3FullAccess`
+→ `AmazonEC2ReadOnlyAccess`
+→ `AdministratorAccess`
+
+📌 Best for beginners & standard roles
+
+---
+
+ 2️⃣ Customer Managed Policies
+
+→ Customer khud create karta hai
+→ Specific business requirement ke according
+
+ 🔹 Real-World Example
+
+Company roles:
+→ Developer → EC2 + S3 limited access
+→ QA → Read-only access
+→ Admin → Full access
+
+👉 Ek policy bana ke multiple users/groups ko attach kar sakte ho
+
+---
+
+ 7️⃣ Resource Policies
+
+ 🔹 What is Resource Policy?
+
+→ Policy resource ke upar attach hoti hai
+→ Identity ke upar nahi
+
+Examples of resources:
+→ S3 Bucket
+→ VPC Endpoint
+→ KMS Key
+→ API Gateway
+→ Lambda Function
+
+ 🔹 Real-World Example
+
+→ S3 bucket ko allow karna:
+
+ Account A
+ Account B
+
+👉 Ye kaam Resource Policy se hota hai (Bucket Policy)
+
+📌 Cross-account access ke liye Resource Policy mandatory hoti hai
+
+---
+
+ 8️⃣ IAM Policy Evaluation Logic (VERY IMPORTANT 🔥)
+
+ ❗ Golden Rule:
+
+For every API call, decision STARTS WITH DENY
+
+ Step-by-Step Evaluation
+
+ Step 1️⃣
+
+→ AWS saari applicable policies ko combine karta hai
+(IAM policy + resource policy + SCP, etc.)
+
+ Step 2️⃣
+
+→ Agar ANY explicit DENY mil gaya
+👉 Final decision = DENY ❌
+
+ Step 3️⃣
+
+→ Agar DENY nahi hai aur ALLOW match karta hai
+👉 Final decision = ALLOW ✅
+
+ Step 4️⃣
+
+→ Agar kuch bhi match nahi karta
+👉 Default = DENY ❌
+
+📌 Explicit DENY always wins
+
+---
+
+ 9️⃣ Evolution of Policy (Real-World Logic)
+
+Airplane example ✈️:
+
+1️⃣ Passenger boarding
+2️⃣ Check → Is person on NO-FLY list?
+→ Yes ❌ → DENY
+3️⃣ No → Valid documents?
+→ Yes ✅ → ALLOW
+4️⃣ No → DENY
+
+👉 Same logic AWS IAM follow karta hai
+
+---
+
+ 🔟 Key Interview Points (Must Remember)
+
+→ IAM policy is JSON based
+→ Default action is always DENY
+→ Explicit DENY > Allow
+→ Managed policy > Inline policy (best practice)
+→ Resource policy used for cross-account access
+→ Policies control authorization, not authentication
+
+---
+
+ ✅ Day 26 Summary
+
+Today’s learning helped me clearly understand:
+
+→ How AWS controls access using IAM policies
+→ Difference between Inline, Managed & Resource policies
+→ Real-world permission design
+→ How AWS evaluates every API call securely
+
+This is core foundation for cloud security & enterprise AWS architecture 🚀
+
+---
+
+
