@@ -1,0 +1,362 @@
+📘 Day 28 – DATABASE (Complete Foundation Notes)
+
+---
+
+ 1️⃣ What is Data?
+
+Tumne likha tha:
+
+Information → Knowledge → Fact → Data
+
+Let’s clarify properly:
+
+ ✅ Data
+
+Raw facts & figures without context.
+
+Example:
+
+ 101
+ Ayush
+ 50000
+ 01/01/2026
+
+Ye sirf raw values hain.
+
+---
+
+ ✅ Information
+
+Processed data that has meaning.
+
+Example:
+Salary = ₹50,000
+Employee Name = Ayush
+
+---
+
+ ✅ Knowledge
+
+Understanding patterns from information.
+
+Example:
+If salary increased → Performance good.
+
+---
+
+ 2️⃣ What is a Database?
+
+Database = Organized collection of data.
+
+Simple words:
+👉 Data ko structured tarike se store karna taaki easily retrieve ho sake.
+
+Example:
+Bank system me:
+
+ Customer details
+ Account balance
+ Transactions
+
+Ye sab database me stored hota hai.
+
+---
+
+ 3️⃣ What is DBMS? (Database Management System)
+
+DBMS = Software jo database ko manage karta hai.
+
+Tumne likha tha:
+
+ Data store
+ Data dikhata
+ Update
+ Delete
+
+Yes ✅
+Ye sab DBMS karta hai.
+
+ DBMS ke functions:
+
+✔ Store data
+✔ Retrieve data
+✔ Update data
+✔ Delete data
+✔ Security control
+✔ Backup & recovery
+✔ Multi-user access
+
+---
+
+ 4️⃣ Real-World Industry Example
+
+ Example: Flipkart
+
+Jab tum product search karte ho:
+
+→ Product data database se fetch hota hai
+→ Price update hota hai
+→ Stock update hota hai
+→ Order insert hota hai
+
+Ye sab DBMS handle karta hai.
+
+---
+
+ 5️⃣ Types of DBMS
+
+Tumhare diagram ke according 👇
+
+---
+
+ 1️⃣ RDBMS (Relational DBMS)
+
+Structure:
+→ Tables (Rows + Columns)
+→ Relation between tables
+
+Example:
+Students Table
+Courses Table
+
+Relation:
+Student_ID → Foreign key
+
+---
+
+ Real-World Example:
+
+Banking System
+E-commerce
+ERP systems
+
+---
+
+ Popular RDBMS:
+
+ MySQL
+ PostgreSQL
+ Oracle
+ SQL Server
+
+---
+
+ AWS Example:
+
+→ Amazon RDS
+→ Aurora
+
+---
+
+ 2️⃣ NoSQL / Non-Relational DBMS
+
+No fixed table structure.
+
+Types:
+
+ Key-Value
+ Document
+ Column
+ Graph
+
+Used when:
+→ Large scale data
+→ High speed
+→ Flexible schema
+
+---
+
+ Real-World Example:
+
+Instagram
+Netflix
+Amazon recommendations
+
+---
+
+ AWS Example:
+
+→ DynamoDB
+
+---
+
+ 3️⃣ ODBMS (Object-Oriented DBMS)
+
+Data stored as objects (like programming objects).
+
+Use case:
+→ When application built using OOP languages
+
+Less common in industry compared to RDBMS & NoSQL.
+
+---
+
+ 4️⃣ Network DBMS
+
+Structure like graph/network.
+
+Used for:
+→ Complex many-to-many relationships
+
+Modern version:
+→ Graph databases
+
+Example:
+Social media friend connections.
+
+---
+
+ 5️⃣ Cloud-Based DBMS
+
+Database hosted on cloud infrastructure.
+
+Benefits:
+✔ High availability
+✔ Scalability
+✔ Automatic backup
+✔ Managed service
+
+---
+
+ AWS Examples:
+
+→ RDS
+→ Aurora
+→ DynamoDB
+→ Redshift
+
+Industry me mostly Cloud DB use hota hai.
+
+---
+
+ 6️⃣ Difference Between DBMS Types
+
+| Feature   | RDBMS    | NoSQL      | ODBMS        |
+| --------- | -------- | ---------- | ------------ |
+| Structure | Tables   | Flexible   | Objects      |
+| Schema    | Fixed    | Dynamic    | Object-based |
+| Scale     | Vertical | Horizontal | Moderate     |
+| Use Case  | Banking  | Big data   | OOP apps     |
+
+---
+
+ 7️⃣ SQL (Structured Query Language)
+
+Tumhare diagram ke according 👇
+
+SQL Categories:
+
+ 1️⃣ DDL (Data Definition Language)
+
+→ CREATE
+→ DROP
+→ ALTER
+
+Structure define karta hai.
+
+---
+
+ 2️⃣ DML (Data Manipulation Language)
+
+→ INSERT
+→ UPDATE
+→ DELETE
+
+Data modify karta hai.
+
+---
+
+ 3️⃣ DQL (Data Query Language)
+
+→ SELECT
+
+Data fetch karta hai.
+
+---
+
+ 4️⃣ DCL (Data Control Language)
+
+→ GRANT
+→ REVOKE
+
+Permissions manage karta hai.
+
+---
+
+ 5️⃣ TCL (Transaction Control Language)
+
+→ COMMIT
+→ ROLLBACK
+
+Transaction control karta hai.
+
+---
+
+ 8️⃣ Industry Level Architecture Example
+
+Example: E-commerce Website
+
+User →
+Application Server →
+Database →
+
+Database me:
+
+ Users table
+ Orders table
+ Products table
+ Payments table
+
+High traffic me:
+→ Read replica
+→ Backup
+→ Auto scaling
+
+Cloud DB use hota hai.
+
+---
+
+ 9️⃣ Why Database is Important in Cloud?
+
+Cloud = Compute + Storage + Networking + Database
+
+Without DB:
+→ No application state
+→ No transactions
+→ No user records
+
+Every real-world application database use karta hai.
+
+---
+
+ 🔟 Interview Important Points
+
+✔ DBMS vs RDBMS difference
+✔ ACID properties (next topic likely)
+✔ SQL categories
+✔ NoSQL use cases
+✔ Cloud database advantages
+
+---
+
+ ✅ Day 28 Summary
+
+Aaj humne samjha:
+
+→ What is data
+→ What is database
+→ What is DBMS
+→ Types of DBMS
+→ SQL categories
+→ Real-world industry usage
+
+Ye foundation hai:
+→ Data engineering
+→ Backend development
+→ Cloud architecture
+→ DevOps
+→ Analytics
+
+---
+
+
