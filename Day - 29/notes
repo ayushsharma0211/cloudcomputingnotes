@@ -1,1 +1,452 @@
+📘 Day 29 – SQL Fundamentals & Query Types
+
+1️⃣ Database Structure Hierarchy
+
+Before learning SQL commands, it's important to understand how data is organized inside a database.
+
+Hierarchy:
+
+DBMS → Database → Schema → Tables → Data
+
+ DBMS (Database Management System)
+
+Software used to manage databases.
+
+Examples:
+
+ MySQL
+ PostgreSQL
+ Oracle
+ SQL Server
+
+Functions:
+→ Store data
+→ Retrieve data
+→ Update data
+→ Delete data
+→ Manage security
+→ Handle multiple users
+
+---
+
+ Database
+
+A collection of organized data.
+
+Example:
+Bank Database may contain:
+
+ Customers
+ Accounts
+ Transactions
+
+---
+
+ Schema
+
+Schema defines the structure of the database.
+
+It includes:
+
+ Tables
+ Columns
+ Relationships
+ Constraints
+
+Example:
+
+```
+Student Schema
+ ├── Students Table
+ ├── Courses Table
+ └── Marks Table
+```
+
+---
+
+ Table
+
+Data is stored in tables.
+
+Tables contain:
+
+ Rows (records)
+ Columns (fields)
+
+Example:
+
+| ID | Name  | Course |
+| -- | ----- | ------ |
+| 1  | Ayush | Cloud  |
+| 2  | Rahul | DevOps |
+
+---
+
+ Data
+
+Actual values stored in tables.
+
+Example:
+
+ Name
+ Salary
+ Order ID
+ Email
+
+---
+
+2️⃣ SQL (Structured Query Language)
+
+SQL is used to communicate with the database.
+
+Using SQL we can:
+
+ Create tables
+ Insert data
+ Update records
+ Delete records
+ Control access
+
+Example:
+
+```
+SELECT  FROM students;
+```
+
+---
+
+3️⃣ SQL Command Categories
+
+SQL commands are divided into 5 main categories:
+
+1️⃣ DDL
+2️⃣ DML
+3️⃣ DQL
+4️⃣ DCL
+5️⃣ TCL
+
+---
+
+4️⃣ DDL – Data Definition Language
+
+DDL is used to define or modify the structure of the database.
+
+In simple words:
+
+DDL = Design database structure
+
+ DDL Commands
+
+ CREATE
+
+Used to create database objects.
+
+Example:
+
+```
+CREATE TABLE student (
+id INT,
+name VARCHAR(50)
+);
+```
+
+---
+
+ ALTER
+
+Used to modify an existing table.
+
+Example:
+
+```
+ALTER TABLE student
+ADD age INT;
+```
+
+---
+
+ DROP
+
+Deletes the entire object (table/database).
+
+Example:
+
+```
+DROP TABLE student;
+```
+
+⚠️ Data permanently deleted.
+
+---
+
+ TRUNCATE
+
+Deletes all rows from table, but keeps table structure.
+
+Example:
+
+```
+TRUNCATE TABLE student;
+```
+
+Difference from DELETE:
+
+ Faster
+ Cannot rollback easily
+
+---
+
+5️⃣ DML – Data Manipulation Language
+
+DML is used to modify data inside tables.
+
+DML = Working with data
+
+DML Commands
+
+INSERT
+
+Add new records.
+
+Example:
+
+```
+INSERT INTO student
+VALUES (1,'Ayush');
+```
+
+---
+
+ UPDATE
+
+Modify existing records.
+
+Example:
+
+```
+UPDATE student
+SET name='Rahul'
+WHERE id=1;
+```
+
+---
+
+ DELETE
+
+Remove specific rows.
+
+Example:
+
+```
+DELETE FROM student
+WHERE id=1;
+```
+
+---
+
+6️⃣ DQL – Data Query Language
+
+DQL is used to retrieve data from the database.
+
+Main command:
+
+ SELECT
+
+Example:
+
+```
+SELECT  FROM student;
+```
+
+Other examples:
+
+```
+SELECT name FROM student;
+
+SELECT  FROM student
+WHERE id = 1;
+```
+
+---
+
+7️⃣ DCL – Data Control Language
+
+DCL is used to control database access and permissions.
+
+Mostly used by database administrators (DBA).
+
+ DCL Commands
+
+ GRANT
+
+Give permission to user.
+
+Example:
+
+```
+GRANT SELECT ON student TO user1;
+```
+
+---
+
+ REVOKE
+
+Remove permission.
+
+Example:
+
+```
+REVOKE SELECT ON student FROM user1;
+```
+
+---
+
+8️⃣ TCL – Transaction Control Language
+
+TCL manages database transactions.
+
+A transaction is a group of operations performed together.
+
+Example:
+Bank transfer.
+
+Steps:
+
+1. Deduct money
+2. Add money
+
+Both should happen together.
+
+---
+
+ TCL Commands
+
+ COMMIT
+
+Save changes permanently.
+
+```
+COMMIT;
+```
+
+---
+
+ ROLLBACK
+
+Undo changes.
+
+```
+ROLLBACK;
+```
+
+Example:
+If transaction fails → revert.
+
+---
+
+ SAVEPOINT
+
+Create a checkpoint in transaction.
+
+```
+SAVEPOINT point1;
+```
+
+You can rollback to that point.
+
+---
+
+9️⃣ SQL vs NoSQL (Based on your second image)
+
+ SQL Database
+
+Structure:
+Rows & Columns
+
+Example:
+MySQL, PostgreSQL
+
+Features:
+
+ Fixed schema
+ Vertical scaling
+ ACID transactions
+
+ACID:
+
+A → Atomicity
+C → Consistency
+I → Isolation
+D → Durability
+
+---
+
+ NoSQL Database
+
+Structure:
+
+ Key-value
+ Document
+ Graph
+ Column
+
+Example:
+MongoDB
+DynamoDB
+
+Features:
+
+ Dynamic schema
+ Horizontal scaling
+ High performance
+
+BASE model:
+
+B → Basically Available
+S → Soft State
+E → Eventual Consistency
+
+---
+
+ 🔑 Real-World Example
+
+ E-commerce Application
+
+Tables:
+
+Users
+Products
+Orders
+Payments
+
+Example queries:
+
+```
+SELECT  FROM products;
+```
+
+```
+INSERT INTO orders VALUES (...);
+```
+
+```
+UPDATE products SET stock = 10;
+```
+
+---
+
+✅ Day 29 Summary
+
+Today you learned:
+
+✔ Database hierarchy
+✔ SQL fundamentals
+✔ DDL commands
+✔ DML commands
+✔ DQL queries
+✔ DCL permissions
+✔ TCL transactions
+✔ SQL vs NoSQL concepts
+
+These are core fundamentals of databases used in cloud, backend development, and data engineering.
 
